@@ -133,7 +133,7 @@ def main(farms_csv, weather_dir):
     z_scores = (metrics - metrics.mean(0)) / (metrics.std(0) + 1e-12)
     save(
         os.path.join(out_dir, "site_table_zscore.csv"),
-        ["cell_key"] + names,
+        ["cell_key", "n_farms", "total_mw"] + names,
         [[row[0]] + z.tolist() for row, z in zip(rows, z_scores)],
     )
 
