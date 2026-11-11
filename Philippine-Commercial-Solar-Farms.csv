@@ -1,0 +1,109 @@
+project,province,municipality,installed_mw,lat,lon,cell_lat,cell_lon,cell_key
+San Marcelino Solar Power Project,Zambales,San Marcelino,308.3,15.0132103,120.2492978,15.0,120.0,15.000_120.000
+Olongapo Solar Power Project,Zambales,Olongapo,172.2,14.8835047,120.3142123,15.0,120.625,15.000_120.625
+Calatrava Solar Power Plant,Negros Occidental,Calatrava,137.4,10.5526496,123.4630348,10.5,123.75,10.500_123.750
+Laoag Solar Power Project,Pangasinan,Aguilar,130.24,15.8438236,120.2155006,16.0,120.0,16.000_120.000
+Cadiz Solar Power Project,Negros Occidental,Cadiz City,108.12,10.9209423,123.2972733,11.0,123.125,11.000_123.125
+Ilocos Norte Solar Power Project,Ilocos Norte,Burgos,92.36,18.4541801,120.6892912,18.5,120.625,18.500_120.625
+Sta. Rita Solar Power Project,Bataan,Hermosa,90.97,14.8021115,120.3653495,15.0,120.625,15.000_120.625
+Alaminos Solar Power Project,Laguna,Alaminos,89.362,14.07107424,121.2233985,14.0,121.25,14.000_121.250
+Pinugay Solar Power Project,Rizal,Baras,80.1,14.5800271,121.286501,14.5,121.25,14.500_121.250
+Concepcion 1 Solar Power Project,Tarlac,Concepcion,78.0,15.3758707,120.6083371,15.5,120.625,15.500_120.625
+Cayanga-Bugallon Solar Power Project,Pangasinan,"Labrador, Mabini and Infanta",75.088,15.9395276,120.1338075,16.0,120.0,16.000_120.000
+Currimao Solar Power Project,Ilocos Norte,Currimao,68.74,18.051,120.4858,18.0,120.625,18.000_120.625
+Tarlac Solar Power Project,Tarlac,Tarlac City,62.04,15.4465021,120.6446242,15.5,120.625,15.500_120.625
+Arayat-Mexico Solar Power Plant Project,Pampanga,Arayat and Mexico,61.713,15.16871,120.6740256,15.0,120.625,15.000_120.625
+Morong Solar Power Project,Bataan,Morong,61.6,14.6914537,120.2666045,14.5,120.0,14.500_120.000
+Cagayan North Solar Power Project (formerly Lal-lo Solar Power Project),Cagayan,Lal-lo and Gattaran,60.0,18.1198493,121.7136883,18.0,121.875,18.000_121.875
+San Miguel Solar Power Project,Bulacan,San Miguel,56.25,15.1375247,120.9992283,15.0,121.25,15.000_121.250
+GIGASOL3 Solar Power Project,Zambales,Palauig,54.992,15.4451558,119.9544499,15.5,120.0,15.500_120.000
+Cordon Solar Power Project,Isabela,Cordon,52.72,16.6618328,121.4450107,16.5,121.25,16.500_121.250
+Arayat Solar Power Project,Pampanga,"Mexico, Arayat",51.555,15.1655,120.6822,15.0,120.625,15.000_120.625
+Calabanga Solar Power Project,Camarines Sur,Calabanga,49.95,13.7302879,123.2541219,13.5,123.125,13.500_123.125
+Calatagan Solar Power Project,Batangas,Calatagan,49.68,13.9242714,120.6684523,14.0,120.625,14.000_120.625
+Palauig Solar Power Project.,Zambales,Palauig,49.5,15.470721,119.9216528,15.5,120.0,15.500_120.000
+Toledo Solar Power Project,Cebu,Toledo,48.96,10.4156355,123.6783545,10.5,123.75,10.500_123.750
+Tanauan Solar Power Plant Project,Laguna and Batangas,Calamba and Tanauan,48.118,14.151,121.0868118,14.0,121.25,14.000_121.250
+SACASUN Solar Power Project,Negros Occidental,San Carlos City,46.8,10.5141,123.4255,10.5,123.125,10.500_123.125
+Santo Domingo Solar Power Project,Pangasinan,San Manuel,46.2,16.0737742,120.6414007,16.0,120.625,16.000_120.625
+Sepalco Castilla Solar Power Plant (formerly Palo Solar Power Project),Leyte,Palo,42.0,11.1367323,124.9171546,11.0,125.0,11.000_125.000
+Gamu Solar Power Project,Isabela,Gamu,41.244,17.0711872,121.8110275,17.0,121.875,17.000_121.875
+Maragondon Solar Power Plant Project,Cavite,Maragondon and General Emilio Aguinaldo,40.8,14.241589,120.7893603,14.0,120.625,14.000_120.625
+Manapla Solar Power Project (ISLASOL III) / (SACASOL III),Negros Occidental,Manapla and Cadiz,40.5,10.9448328,123.1650066,11.0,123.125,11.000_123.125
+Sta. Rosa Solar Power Project,Tarlac,Concepcion,40.12,15.3758707,120.6083371,15.5,120.625,15.500_120.625
+Cavite Economic Zone Solar Power Project,Cavite,Rosario and General Trias,40.0,14.417,120.875,14.5,120.625,14.500_120.625
+San Carlos Solar Power Project Phase I-A and I-B (SACASOL I-A&I-B),Negros Occidental,San Carlos City,39.3,10.5186267,123.4287747,10.5,123.125,10.500_123.125
+Armenia Solar Power Project,Pampanga,Floridablanca,37.52,15.4346225,120.5461413,15.5,120.625,15.500_120.625
+Samal Solar Power Project,Bataan,Samal,35.84,14.7681898,120.4919361,15.0,120.625,15.000_120.625
+Bongabon Solar Power Project,Nueva Ecija,Bongabon,30.933,15.6480774,121.1984643,15.5,121.25,15.500_121.250
+Arayat 3A Solar Power Project,Pampanga,Arayat,29.43,15.18504942,120.6793281,15.0,120.625,15.000_120.625
+Islasol Solar Power Project (ISLASOL II),Negros Occidental,La Carlota City,27.2,10.4230488,122.9376471,10.5,123.125,10.500_123.125
+RASLAG IV Solar Power Project,Pampanga,Magalang,26.4,15.2105941,120.6725945,15.0,120.625,15.000_120.625
+Nexperia Solar Rooftop Project,Laguna,Cabuyao,25.0,14.23105146,121.0951386,14.0,121.25,14.000_121.250
+Digos Solar Power Project,Davao del Sur,Digos City,24.781,6.7729312,125.2848446,7.0,125.0,7.000_125.000
+Ormoc Solar Power Project,Leyte,Ormoc,24.48,11.0843311,124.6305596,11.0,124.375,11.000_124.375
+Silay Solar Power Project,Negros Occidental,Silay City,22.0,10.8054135,122.9921174,11.0,123.125,11.000_123.125
+Dagohoy Solar Power Project,Bohol,Dagohoy,20.16,9.8703019,124.2616798,10.0,124.375,10.000_124.375
+Hermosa Solar Power Project,Bataan,Hermosa,20.0,14.86755761,120.4921549,15.0,120.625,15.000_120.625
+Clark Solar Power Project,Pampanga,"Clark Special Economic Zone, Mabalacat City",19.8,15.227559,120.5567726,15.0,120.625,15.000_120.625
+Bongabon Solar Power Project,Nueva Ecija,Bongabon,19.8,15.64634699,121.1948194,15.5,121.25,15.500_121.250
+Pampanga Solar Power Project,Pampanga,Mexico,19.0,15.1333005,120.6343679,15.0,120.625,15.000_120.625
+Taft Solar Power Project,Eastern Samar,Taft,17.5,11.8236199,125.2755869,12.0,125.0,12.000_125.000
+Solana Solar Beta Inc. Solar Power Project,Bataan and Pampanga,Hermosa and Lubao,17.4,14.86323919,120.5003637,15.0,120.625,15.000_120.625
+Misamis Solar Power Project,Misamis Oriental,Tagoloan,17.185,8.549596228,124.7559421,8.5,125.0,8.500_125.000
+Currimao Solar Power Project.,Ilocos Norte,Currimao,16.32,18.0495572,120.4870796,18.0,120.625,18.000_120.625
+PAVI Green Orion Solar Power Plant Project,Bataan,Orion,16.2,14.5849405,120.5713855,14.5,120.625,14.500_120.625
+Trust Solar Power Project,Pampanga,Mabalacat,15.4,15.24713848,120.6064834,15.0,120.625,15.000_120.625
+San Jose Solar Power Project,Nueva Ecija,San Jose City,15.3,15.79539544,120.9245411,16.0,120.625,16.000_120.625
+Sta. Barbara Solar Power Project,Pangasinan,Mapandan and Santa Barbara,15.253,16.0032,120.4536,16.0,120.625,16.000_120.625
+Ecopark Tagalag Solar Power Project,Metro Manila and Bulacan,Valenzuela City and Obando-Meycauayan,14.7,14.7256136,120.9400721,14.5,121.25,14.500_121.250
+Bais City Solar Power Project (SACASOL IV),Negros Oriental,Bais City,14.4,9.6365471,123.096256,9.5,123.125,9.500_123.125
+Raslag III Solar PV Power Project,Pampanga,Mabalacat,13.43,15.1941853,120.6257522,15.0,120.625,15.000_120.625
+Hermosa Solar Power Project,Bataan,Hermosa,13.36,14.8318196,120.4470406,15.0,120.625,15.000_120.625
+Robinsons Tuguegarao Roof-Mounted Solar Energy Project,Cagayan,Tuguegarao,12.0,17.628065,121.7335008,17.5,121.875,17.500_121.875
+Phelps Dodge Philippines Energy Products Corporation Roof-Mounted Solar PV System Project,Tarlac,Tarlac City & Victoria,12.0,15.441661,120.6075069,15.5,120.625,15.500_120.625
+SM North Solar Power Project,Metro Manila,Quezon City,12.0,14.6576586,121.0309944,14.5,121.25,14.500_121.250
+Bulacan 3 Solar Power Project,Bulacan,San Ildefonso,11.34,15.00620144,121.0303178,15.0,121.25,15.000_121.250
+Kirahon Solar Power Project,Misamis Oriental,Villanueva,10.0,8.5558548,124.7867769,8.5,125.0,8.500_125.000
+Cabanatuan Solar Power Project,Nueva Ecija,Cabanatuan City,9.075,15.4965123,120.9917435,15.5,121.25,15.500_121.250
+YH Camarines Norte Solar Power Plant,Camarines Norte,Labo,8.724,14.13758845,122.8463548,14.0,123.125,14.000_123.125
+Kibawe Solar Power Project,Bukidnon,Kibawe,8.16,7.5550901,124.9698068,7.5,125.0,7.500_125.000
+Tumingad Island Solar Power Project,Romblon,Odiongan,7.92,12.4348635,122.0222967,12.5,121.875,12.500_121.875
+Armenia Solar Power Project,Tarlac,Tarlac City,7.1,15.43506004,120.5440362,15.5,120.625,15.500_120.625
+Valenzuela Solar Power Project,Metro Manila,Valenzuela City,6.715,14.7029892,120.9521515,14.5,121.25,14.500_121.250
+8.009 MWp Roof-Mounted Solar Energy Project,Batangas,Batangas City,6.49,13.6758,121.0539,13.5,121.25,13.500_121.250
+Burgos Solar Power Project,Ilocos Norte,Burgos,6.0,18.5274596,120.6365481,18.5,120.625,18.500_120.625
+SMRA Solar Power Plant,Occidental Mindoro,San Jose,5.904,12.4124962,121.0500071,12.5,121.25,12.500_121.250
+Dalayap Solar Power Project,Tarlac,Tarlac City and San Jose,5.88,15.5364972,120.6148973,15.5,120.625,15.500_120.625
+Centrala Solar Power Project,South Cotabato,Surallah,4.98,6.3338394,124.7444042,6.5,125.0,6.500_125.000
+5.803 MWp Roof-Mounted Solar Energy Project,Batangas,Batangas City,4.79,13.6758,121.0539,13.5,121.25,13.500_121.250
+Naic Cavite Rooftop Solar Power Project,Cavite,Naic,4.6,14.3178101,120.8049885,14.5,120.625,14.500_120.625
+Miag-ao Solar Power Project,Iloilo,Miagao,4.5,10.6157855,122.167847,10.5,121.875,10.500_121.875
+Ecopark Isla Solar Power Project,Metro Manila,Valenzuela City,4.035,14.704828,120.951015,14.5,121.25,14.500_121.250
+Bataan Solar Power Project,Bataan,Mariveles,4.0,14.4383313,120.4951339,14.5,120.625,14.500_120.625
+San Rafael Solar Power Project,Bulacan,Palauig,3.67,15.0074403,120.9731358,15.0,121.25,15.000_121.250
+Alasasin Solar Power Project,Bataan,Mariveles,3.65,14.4511741,120.534707,14.5,120.625,14.500_120.625
+Mitsubishi Motors Philippines Corporation Phase 1 Solar Power Project,Laguna,Sta. Rosa,3.18,14.26248641,121.0608322,14.5,121.25,14.500_121.250
+SM Fairview Roof-Mounted Solar PV System,Metro Manila,Quezon City,3.06,14.7334933,121.0583937,14.5,121.25,14.500_121.250
+SM Dasmari√±as Roof-Mounted Solar PV System Project,Cavite,Dasmari√±as,2.76,14.3018481,120.9567607,14.5,121.25,14.500_121.250
+Canlubang Baking Facility Solar Power Project,Laguna,"Canlubang, Calamba City",2.63,14.20497785,121.0904195,14.0,121.25,14.000_121.250
+SM Southmall Roof-Mounted Solar PV System Project,Metro Manila,City of Las Pi√±as,2.612,14.4324991,121.0100751,14.5,121.25,14.500_121.250
+Mariwasa-Siam Ceramics Inc. Solar Power Rooftop Project,Batangas,Sto. Tomas,2.6,14.1113889,121.1505556,14.0,121.25,14.000_121.250
+Nexperia Solar Rooftop Project,Laguna,Cabuyao,2.5,14.23105146,121.0951386,14.0,121.25,14.000_121.250
+Coca Cola Beverages Philippines Inc. - Sta. Rosa Plant,Laguna,Sta. Rosa,2.4,14.28307375,121.0852279,14.5,121.25,14.500_121.250
+SM Mall of Asia Solar Power Project,Metro Manila,Pasay City,2.4,14.5351818,120.9815994,14.5,121.25,14.500_121.250
+SM Sta. Rosa Solar Rooftop Power Project,Laguna,Sta. Rosa,2.398,14.31200484,121.0980877,14.5,121.25,14.500_121.250
+Festival Mall Solar Rooftop Project,Metro Manila,Muntinlupa,2.31,14.4167282,121.0407787,14.5,121.25,14.500_121.250
+C3 Solar Power Project,Laguna,Calamba,2.25,14.2063337,121.0899205,14.0,121.25,14.000_121.250
+MacroAsia Special Economic Zone Solar Power Project,Metro Manila,Pasay City,2.04,14.5155769,121.0236163,14.5,121.25,14.500_121.250
+SM City Marikina Roof-Mounted Solar PV System Project,Metro Manila,Marikina City,1.8,14.6258682,121.0840561,14.5,121.25,14.500_121.250
+SM City Roxas Roof-Mounted Solar PV System Project,Capiz,Roxas City,1.6,11.5962682,122.7484669,11.5,122.5,11.500_122.500
+Lian Solar Power Project,Batangas,Lian,1.571,14.043822,120.66349,14.0,120.625,14.000_120.625
+SM City Molino Roof-Mounted Solar PV System Project,Cavite,Bacoor,1.56,14.3835332,120.9770752,14.5,121.25,14.500_121.250
+SM Masinag Roof-Mounted Solar PV System Project,Rizal,Antipolo,1.5,14.6257814,121.1204208,14.5,121.25,14.500_121.250
+Asian Transmission Corporation Solar Project,Laguna,Calamba,1.38,14.21245545,121.0927195,14.0,121.25,14.000_121.250
+Asian Transmission Corporation Solar Power Project,Laguna,Calamba,1.38,14.21245545,121.0927195,14.0,121.25,14.000_121.250
+Zenith Foods Corporation (Zen 3) Solar Power Project,Laguna,Calamba,1.25,14.20525076,121.0904444,14.0,121.25,14.000_121.250
+Palawan Solar Power Project,Palawan,Puerto Princesa City,1.2,10.1498791,118.8735299,10.0,118.75,10.000_118.750
+Mariwasa-Siam Ceramics Inc. Solar Power Rooftop Project - Phase 2,Batangas,Sto. Tomas,1.1,14.1113889,121.1505556,14.0,121.25,14.000_121.250
+SM San Jose Del Monte Solar Rooftop Power Plant,Bulacan,San Jose Del Monte,1.0,14.7863484,121.0754176,15.0,121.25,15.000_121.250
