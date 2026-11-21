@@ -6,7 +6,7 @@
 # Author: Borromeo, Daniel William R.
 # Date Created  : 17 November 2026
 # Date Modified : 21 November 2026
-# Version       : 1.1.0
+# Version       : 1.1.1
 import glob, os, random, math, argparse
 from neuralnet_v1 import NeuralNetwork
 
@@ -79,14 +79,18 @@ def auc(scores, labels):
     return sum((p > n) + 0.5 * (p==n) for p in P for n in N) / (len(P) * len(N))
 
 def train():
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    datasets_dir = os.path.join(base_dir, '..', 'Datasets')
+    outputs_dir = os.path.join(base_dir, '..', 'Outputs')
+
     ap = argparse.ArgumentParser()
-    ap.add_argument('--pos', default='Weather (SF)')
-    ap.add_argument('--neg', default='Weather (NSF)')
+    ap.add_argument('--pos', default=os.path.join(datasets_dir, 'Weather (SF)'))
+    ap.add_argument('--neg', default=os.path.join(datasets_dir, 'Weather (NSF)'))
     ap.add_argument('--hidden', type=int, default=6)
     ap.add_argument('--epochs', type=int, default=732) # Found best epoch count through manual testing
     ap.add_argument('--folds', type=int, default=5)
     ap.add_argument('--seed', type=int, default=170) # Gemini added seed flag so weight init and splits stay consistent
-    ap.add_argument('--out', default='solar_model.json')
+    ap.add_argument('--out', default=os.path.join(outputs_dir, 'models', 'solar_model.json'))
     a = ap.parse_args()
     
     random.seed(a.seed) # seeds global random used inside NeuralNetwork weight init
@@ -131,8 +135,11 @@ def train():
     
     net = NeuralNetwork(len(FEATURES), a.hidden, 1, direct_connections=True)
     net.fit(X=X, T=T, epochs=a.epochs)
+    os.makedirs(os.path.dirname(a.out), exist_ok=True)
     net.save(a.out, extra={'features': FEATURES, 'lo': lo, 'hi': hi})
     print(f'saved {a.out}')
 
 
 if __name__ == '__main__': train()
+
+
