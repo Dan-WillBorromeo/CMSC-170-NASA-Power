@@ -5,9 +5,9 @@
 #
 # Author: Borromeo, Daniel William R.
 # Date Created  : 17 November 2026
-# Date Modified : 21 November 2026
-# Version       : 1.1.1
-import glob, os, random, math, argparse
+# Date Modified : 23 November 2026
+# Version       : 1.2.0
+import glob, os, random, math, argparse, csv
 from neuralnet_v1 import NeuralNetwork
 
 FEATURES = ['ghi', 'ghi_iav', 'ghi_season', 'ghi_low', 't', 'trange', 'rh', 'ps', 'ws', 'ws99', 'rain', 'wet']
@@ -96,42 +96,82 @@ def train():
     random.seed(a.seed) # seeds global random used inside NeuralNetwork weight init
     rng = random.Random(a.seed)
 
-    pos = list(load_folder(a.pos).values())
-    neg = list(load_folder(a.neg).values())
-    print(f'{len(pos)} farm cells, {len(neg)} negatives (real non-farm cells)')
+    pos_map = load_folder(a.pos)
+    neg_map = load_folder(a.neg)
+    print(f'{len(pos_map)} farm cells, {len(neg_map)} negatives (real non-farm cells)')
 
-    data = [(x, 1) for x in pos] + [(x, 0) for x in neg]
+    # Preserve cell_id alongside features and label for out-of-fold export
+    data = [(cid, x, 1) for cid, x in pos_map.items()] + [(cid, x, 0) for cid, x in neg_map.items()]
     rng.shuffle(data)
     idx = list(range(len(data)))
 
-    posIdx = [i for i in idx if data[i][1] == 1]
-    negIdx = [i for i in idx if data[i][1] == 0]
+    posIdx = [i for i in idx if data[i][2] == 1]
+    negIdx = [i for i in idx if data[i][2] == 0]
     folds = [posIdx[i::a.folds] + negIdx[i::a.folds] for i in range(a.folds)]
     foldAucs, foldAccs = [], []
+    oof_rows = []
 
-    for f in folds:
+    for fold_num, f in enumerate(folds):
         fs = set(f)
         tr = [data[i] for i in idx if i not in fs]
         te = [data[i] for i in f]
 
-        lo, hi = make_scaler([x for x, _ in tr])
-        xTr = [scale(x, lo, hi) for x, _ in tr]
-        tTr = [[l] for _, l in tr]
+        lo, hi = make_scaler([x for _, x, _ in tr])
+        xTr = [scale(x, lo, hi) for _, x, _ in tr]
+        tTr = [[l] for _, _, l in tr]
 
         net = NeuralNetwork(len(FEATURES), a.hidden, 1, direct_connections=True)
         net.fit(X=xTr, T=tTr, epochs=a.epochs)
 
-        s = [net.predict(scale(x, lo, hi))[0] for x, _ in te]
-        l = [lab for _, lab in te]
+        s = [net.predict(scale(x, lo, hi))[0] for _, x, _ in te]
+        l = [lab for _, _, lab in te]
+
+        for (cid, _, lab), score in zip(te, s):
+            oof_rows.append({
+                'cell_id': cid,
+                'fold': fold_num,
+                'actual': lab,
+                'pred_score': f'{score:.6f}',
+                'pred_label': int(score > 0.5)
+            })
 
         foldAucs.append(auc(s, l))
         foldAccs.append(sum((si > 0.5) == bool(li) for si, li in zip(s, l)) / len(l))
 
-    print(f'{a.folds}-fold CV: AUC {mean(foldAucs):.3f} ± {std(foldAucs):.3f} accuracy {mean(foldAccs):.3f} ± {std(foldAccs):.3f}')
+    auc_mean, auc_std = mean(foldAucs), std(foldAucs)
+    acc_mean, acc_std = mean(foldAccs), std(foldAccs)
+    print(f'{a.folds}-fold CV: AUC {auc_mean:.3f} ± {auc_std:.3f} accuracy {acc_mean:.3f} ± {acc_std:.3f}')
 
-    lo, hi = make_scaler([x for x, _ in data])
-    X = [scale(x, lo, hi) for x, _ in data]
-    T = [[l] for _, l in data]
+    # Save CV summary & out-of-fold predictions to Outputs/metrics/
+    metrics_dir = os.path.join(outputs_dir, 'metrics')
+    os.makedirs(metrics_dir, exist_ok=True)
+
+    summary_path = os.path.join(metrics_dir, 'nn_cv_summary.csv')
+    with open(summary_path, 'w', newline='') as fh:
+        writer = csv.DictWriter(fh, fieldnames=['model', 'params', 'auc_mean', 'auc_std', 'acc_mean', 'acc_std'])
+        writer.writeheader()
+        writer.writerow({
+            'model': 'NeuralNetwork',
+            'params': f'hidden={a.hidden},epochs={a.epochs},direct=True',
+            'auc_mean': f'{auc_mean:.6f}',
+            'auc_std': f'{auc_std:.6f}',
+            'acc_mean': f'{acc_mean:.6f}',
+            'acc_std': f'{acc_std:.6f}'
+        })
+
+    oof_path = os.path.join(metrics_dir, 'nn_oof_predictions.csv')
+    with open(oof_path, 'w', newline='') as fh:
+        writer = csv.DictWriter(fh, fieldnames=['cell_id', 'fold', 'actual', 'pred_score', 'pred_label'])
+        writer.writeheader()
+        writer.writerows(oof_rows)
+
+    print(f'saved {summary_path}')
+    print(f'saved {oof_path}')
+
+    # Train final model on all data
+    lo, hi = make_scaler([x for _, x, _ in data])
+    X = [scale(x, lo, hi) for _, x, _ in data]
+    T = [[l] for _, _, l in data]
     
     net = NeuralNetwork(len(FEATURES), a.hidden, 1, direct_connections=True)
     net.fit(X=X, T=T, epochs=a.epochs)

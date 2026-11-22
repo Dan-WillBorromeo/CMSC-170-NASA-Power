@@ -1,0 +1,2 @@
+model,params,auc_mean,auc_std,acc_mean,acc_std
+NeuralNetwork,"hidden=6,epochs=732,direct=True",0.752423,0.118171,0.735714,0.118262
