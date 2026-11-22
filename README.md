@@ -6,7 +6,7 @@
 **Presentation Slides:** https://docs.google.com/presentation/d/1j7adnXtO2-CzJRf6TJyDyJVQ1btlZ-iR_bugGQqXmCA/edit  
 
 ### Group Members
-* **Borromeo, Daniel William R.** — Neural Network Architecture, Training Pipeline, Negative Grid Sampling
+* **Borromeo, Daniel William R.** — Neural Network Architecture, Training Pipeline, Negative Grid Sampling, Cross-Validation Benchmark
 * **Lagman, Johann Gabriel S.** — k-Nearest Neighbors Implementation, Cross-Validation Benchmark, Repository Standardization
 * **Dayahan, Rey Russel** — Unsupervised Clustering Implementation & Regime Analysis
 * **Plaza, Martin Adrian** — DOE Solar Farm Geolocation & NASA POWER Dataset Aggregation
