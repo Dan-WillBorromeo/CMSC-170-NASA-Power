@@ -1,0 +1,2611 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_34fc286a195e6881a1cc7f0466dd6559 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_34fc286a195e6881a1cc7f0466dd6559" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_34fc286a195e6881a1cc7f0466dd6559 = L.map(
+                "map_34fc286a195e6881a1cc7f0466dd6559",
+                {
+                    center: [12.8797, 121.774],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f4d3c6550eeae96815e2cb04df876615 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f4d3c6550eeae96815e2cb04df876615.addTo(map_34fc286a195e6881a1cc7f0466dd6559);
+        
+    
+            var tile_layer_6d00799a748dddd2376a7172bd7fc8b8 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Esri", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6d00799a748dddd2376a7172bd7fc8b8.addTo(map_34fc286a195e6881a1cc7f0466dd6559);
+        
+    
+            var feature_group_b9b2080876d09cdfe3443d8300c9c69a = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_9d207b77f4c483c8ed877a1fca49f25d = L.marker(
+                [10.0, 118.75],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_b2eb234c7485fb9c758f6077a03173b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_9d207b77f4c483c8ed877a1fca49f25d.setIcon(icon_b2eb234c7485fb9c758f6077a03173b3);
+        
+    
+        var popup_ae099aa73e0cad60ed2709e10bb0cf32 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_10ffb8cb657935fa40a1eef8fd4368af = $(`<div id="html_10ffb8cb657935fa40a1eef8fd4368af" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 10.000_118.750<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.180 kWh/m²/day<br><b>Temp Mean:</b> 27.87 °C (Range: 2.38 °C)<br><b>Humidity / Pressure:</b> 79.4% / 100.18 kPa<br><b>Wind (Mean / 99th):</b> 4.57 / 9.98 m/s<br><b>Annual Rain / Wet Days:</b> 1781.1 mm / 62.4%</div>`)[0];
+                popup_ae099aa73e0cad60ed2709e10bb0cf32.setContent(html_10ffb8cb657935fa40a1eef8fd4368af);
+            
+        
+
+        marker_9d207b77f4c483c8ed877a1fca49f25d.bindPopup(popup_ae099aa73e0cad60ed2709e10bb0cf32)
+        ;
+
+        
+    
+    
+            marker_9d207b77f4c483c8ed877a1fca49f25d.bindTooltip(
+                `<div>
+                     [SF] 10.000_118.750 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdf51cd4e658052716811da29321b2f6 = L.marker(
+                [10.0, 124.375],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_65500ed8efe30f35135a3d04c27a1719 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_cdf51cd4e658052716811da29321b2f6.setIcon(icon_65500ed8efe30f35135a3d04c27a1719);
+        
+    
+        var popup_89609b6c90e51dbcbef6789cf7bb1bf5 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_eb40553ebad3217185e90c6d57fe2403 = $(`<div id="html_eb40553ebad3217185e90c6d57fe2403" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 10.000_124.375<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.047 kWh/m²/day<br><b>Temp Mean:</b> 27.28 °C (Range: 3.93 °C)<br><b>Humidity / Pressure:</b> 82.9% / 100.22 kPa<br><b>Wind (Mean / 99th):</b> 4.08 / 8.23 m/s<br><b>Annual Rain / Wet Days:</b> 2167.2 mm / 70.2%</div>`)[0];
+                popup_89609b6c90e51dbcbef6789cf7bb1bf5.setContent(html_eb40553ebad3217185e90c6d57fe2403);
+            
+        
+
+        marker_cdf51cd4e658052716811da29321b2f6.bindPopup(popup_89609b6c90e51dbcbef6789cf7bb1bf5)
+        ;
+
+        
+    
+    
+            marker_cdf51cd4e658052716811da29321b2f6.bindTooltip(
+                `<div>
+                     [SF] 10.000_124.375 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a63ae56a9aa27b985173d85dc55ce885 = L.marker(
+                [10.5, 121.875],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_e357a07ccadd063d90a8f93d32eb901f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_a63ae56a9aa27b985173d85dc55ce885.setIcon(icon_e357a07ccadd063d90a8f93d32eb901f);
+        
+    
+        var popup_e851c48d030dd85b8946790d7103ec83 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_a3096c0b243d97ca39cae3e77f874c0b = $(`<div id="html_a3096c0b243d97ca39cae3e77f874c0b" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 10.500_121.875<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.301 kWh/m²/day<br><b>Temp Mean:</b> 28.14 °C (Range: 1.92 °C)<br><b>Humidity / Pressure:</b> 80.3% / 100.74 kPa<br><b>Wind (Mean / 99th):</b> 4.81 / 10.07 m/s<br><b>Annual Rain / Wet Days:</b> 2651.5 mm / 67.3%</div>`)[0];
+                popup_e851c48d030dd85b8946790d7103ec83.setContent(html_a3096c0b243d97ca39cae3e77f874c0b);
+            
+        
+
+        marker_a63ae56a9aa27b985173d85dc55ce885.bindPopup(popup_e851c48d030dd85b8946790d7103ec83)
+        ;
+
+        
+    
+    
+            marker_a63ae56a9aa27b985173d85dc55ce885.bindTooltip(
+                `<div>
+                     [SF] 10.500_121.875 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97092ae665211239e4e7fb46bac06d1c = L.marker(
+                [10.5, 123.75],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_ee7a33195d959aa6c47e938650de02e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_97092ae665211239e4e7fb46bac06d1c.setIcon(icon_ee7a33195d959aa6c47e938650de02e4);
+        
+    
+        var popup_112ec50b3e9a1afcdf8ae5241264ce82 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_2fef7a3386fa20e6a442199223f2d826 = $(`<div id="html_2fef7a3386fa20e6a442199223f2d826" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 10.500_123.750<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.981 kWh/m²/day<br><b>Temp Mean:</b> 27.20 °C (Range: 3.62 °C)<br><b>Humidity / Pressure:</b> 83.0% / 99.83 kPa<br><b>Wind (Mean / 99th):</b> 4.07 / 8.41 m/s<br><b>Annual Rain / Wet Days:</b> 2147.5 mm / 69.3%</div>`)[0];
+                popup_112ec50b3e9a1afcdf8ae5241264ce82.setContent(html_2fef7a3386fa20e6a442199223f2d826);
+            
+        
+
+        marker_97092ae665211239e4e7fb46bac06d1c.bindPopup(popup_112ec50b3e9a1afcdf8ae5241264ce82)
+        ;
+
+        
+    
+    
+            marker_97092ae665211239e4e7fb46bac06d1c.bindTooltip(
+                `<div>
+                     [SF] 10.500_123.750 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_732a6f2301d1f73f7b06668429f9acb1 = L.marker(
+                [11.0, 123.125],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_d119d3b78e66fafb522b9f076a87d366 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_732a6f2301d1f73f7b06668429f9acb1.setIcon(icon_d119d3b78e66fafb522b9f076a87d366);
+        
+    
+        var popup_71101003680e17cdb47ab1e411a22047 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_4596f220775d23ed8334f87b374eae4b = $(`<div id="html_4596f220775d23ed8334f87b374eae4b" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 11.000_123.125<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.226 kWh/m²/day<br><b>Temp Mean:</b> 26.96 °C (Range: 3.81 °C)<br><b>Humidity / Pressure:</b> 84.2% / 99.80 kPa<br><b>Wind (Mean / 99th):</b> 3.97 / 8.07 m/s<br><b>Annual Rain / Wet Days:</b> 2515.4 mm / 69.6%</div>`)[0];
+                popup_71101003680e17cdb47ab1e411a22047.setContent(html_4596f220775d23ed8334f87b374eae4b);
+            
+        
+
+        marker_732a6f2301d1f73f7b06668429f9acb1.bindPopup(popup_71101003680e17cdb47ab1e411a22047)
+        ;
+
+        
+    
+    
+            marker_732a6f2301d1f73f7b06668429f9acb1.bindTooltip(
+                `<div>
+                     [SF] 11.000_123.125 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96e976c5e906bbfd262a048e953fbb7f = L.marker(
+                [11.0, 124.375],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_01d4a89a2b792206d52bf9461ce2b53e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_96e976c5e906bbfd262a048e953fbb7f.setIcon(icon_01d4a89a2b792206d52bf9461ce2b53e);
+        
+    
+        var popup_887b1e1d104ddc8471893b85880c201d = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_6c085237ca0d7a5ddfcea707516feb4d = $(`<div id="html_6c085237ca0d7a5ddfcea707516feb4d" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 11.000_124.375<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.941 kWh/m²/day<br><b>Temp Mean:</b> 27.88 °C (Range: 2.88 °C)<br><b>Humidity / Pressure:</b> 81.1% / 100.64 kPa<br><b>Wind (Mean / 99th):</b> 4.37 / 8.84 m/s<br><b>Annual Rain / Wet Days:</b> 2288.6 mm / 72.8%</div>`)[0];
+                popup_887b1e1d104ddc8471893b85880c201d.setContent(html_6c085237ca0d7a5ddfcea707516feb4d);
+            
+        
+
+        marker_96e976c5e906bbfd262a048e953fbb7f.bindPopup(popup_887b1e1d104ddc8471893b85880c201d)
+        ;
+
+        
+    
+    
+            marker_96e976c5e906bbfd262a048e953fbb7f.bindTooltip(
+                `<div>
+                     [SF] 11.000_124.375 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9de1d452d852ed61f50d8c133b0c85fe = L.marker(
+                [11.0, 125.0],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_1f34918f01859447418c450eb9dec1d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_9de1d452d852ed61f50d8c133b0c85fe.setIcon(icon_1f34918f01859447418c450eb9dec1d3);
+        
+    
+        var popup_f3ad7f63a5ecd773a0c470736d95e49f = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_a305fd7019d6619e50c3b72f5afa693c = $(`<div id="html_a305fd7019d6619e50c3b72f5afa693c" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 11.000_125.000<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.868 kWh/m²/day<br><b>Temp Mean:</b> 26.86 °C (Range: 3.78 °C)<br><b>Humidity / Pressure:</b> 84.2% / 99.70 kPa<br><b>Wind (Mean / 99th):</b> 3.84 / 7.67 m/s<br><b>Annual Rain / Wet Days:</b> 3227.0 mm / 80.3%</div>`)[0];
+                popup_f3ad7f63a5ecd773a0c470736d95e49f.setContent(html_a305fd7019d6619e50c3b72f5afa693c);
+            
+        
+
+        marker_9de1d452d852ed61f50d8c133b0c85fe.bindPopup(popup_f3ad7f63a5ecd773a0c470736d95e49f)
+        ;
+
+        
+    
+    
+            marker_9de1d452d852ed61f50d8c133b0c85fe.bindTooltip(
+                `<div>
+                     [SF] 11.000_125.000 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c9ecb31fc47cb8a3d47a606de5c5463 = L.marker(
+                [12.5, 121.25],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_0fedbd6ba57572b5119b4abf6ca86fda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_7c9ecb31fc47cb8a3d47a606de5c5463.setIcon(icon_0fedbd6ba57572b5119b4abf6ca86fda);
+        
+    
+        var popup_0f9fad5d2e193c8d1ac28cff992d407b = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_f120038be55faed29b9943fa2753e071 = $(`<div id="html_f120038be55faed29b9943fa2753e071" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 12.500_121.250<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.072 kWh/m²/day<br><b>Temp Mean:</b> 26.31 °C (Range: 3.91 °C)<br><b>Humidity / Pressure:</b> 84.3% / 98.65 kPa<br><b>Wind (Mean / 99th):</b> 4.20 / 8.64 m/s<br><b>Annual Rain / Wet Days:</b> 2640.5 mm / 69.3%</div>`)[0];
+                popup_0f9fad5d2e193c8d1ac28cff992d407b.setContent(html_f120038be55faed29b9943fa2753e071);
+            
+        
+
+        marker_7c9ecb31fc47cb8a3d47a606de5c5463.bindPopup(popup_0f9fad5d2e193c8d1ac28cff992d407b)
+        ;
+
+        
+    
+    
+            marker_7c9ecb31fc47cb8a3d47a606de5c5463.bindTooltip(
+                `<div>
+                     [SF] 12.500_121.250 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d5b522acce0a6f13258b750489b2b83 = L.marker(
+                [12.5, 121.875],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_4ecb5fcb8030a77b15dfe1dd2d38f3a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_2d5b522acce0a6f13258b750489b2b83.setIcon(icon_4ecb5fcb8030a77b15dfe1dd2d38f3a2);
+        
+    
+        var popup_8169c9e6c060fa8dc90980b2c7116744 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_b3b236f5520d618598316e83443065e8 = $(`<div id="html_b3b236f5520d618598316e83443065e8" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 12.500_121.875<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.072 kWh/m²/day<br><b>Temp Mean:</b> 27.98 °C (Range: 1.37 °C)<br><b>Humidity / Pressure:</b> 81.2% / 100.85 kPa<br><b>Wind (Mean / 99th):</b> 5.36 / 11.02 m/s<br><b>Annual Rain / Wet Days:</b> 2602.9 mm / 68.9%</div>`)[0];
+                popup_8169c9e6c060fa8dc90980b2c7116744.setContent(html_b3b236f5520d618598316e83443065e8);
+            
+        
+
+        marker_2d5b522acce0a6f13258b750489b2b83.bindPopup(popup_8169c9e6c060fa8dc90980b2c7116744)
+        ;
+
+        
+    
+    
+            marker_2d5b522acce0a6f13258b750489b2b83.bindTooltip(
+                `<div>
+                     [SF] 12.500_121.875 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5dee3648c74bb3dfff09c0a8fac669c3 = L.marker(
+                [13.5, 121.25],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_e5a791966b7512db027c99fc0c0ddda5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_5dee3648c74bb3dfff09c0a8fac669c3.setIcon(icon_e5a791966b7512db027c99fc0c0ddda5);
+        
+    
+        var popup_07c7cf10eab62b6f07ae8d40b29c065b = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_e158836958a247ff06d67c56238cafc0 = $(`<div id="html_e158836958a247ff06d67c56238cafc0" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 13.500_121.250<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.941 kWh/m²/day<br><b>Temp Mean:</b> 27.55 °C (Range: 2.95 °C)<br><b>Humidity / Pressure:</b> 81.1% / 100.30 kPa<br><b>Wind (Mean / 99th):</b> 3.79 / 7.75 m/s<br><b>Annual Rain / Wet Days:</b> 2579.2 mm / 72.7%</div>`)[0];
+                popup_07c7cf10eab62b6f07ae8d40b29c065b.setContent(html_e158836958a247ff06d67c56238cafc0);
+            
+        
+
+        marker_5dee3648c74bb3dfff09c0a8fac669c3.bindPopup(popup_07c7cf10eab62b6f07ae8d40b29c065b)
+        ;
+
+        
+    
+    
+            marker_5dee3648c74bb3dfff09c0a8fac669c3.bindTooltip(
+                `<div>
+                     [SF] 13.500_121.250 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13d12b12c7c2153180f953ede01c9fd6 = L.marker(
+                [13.5, 123.125],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_96f07c3e023565fca3d00fad542fb057 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_13d12b12c7c2153180f953ede01c9fd6.setIcon(icon_96f07c3e023565fca3d00fad542fb057);
+        
+    
+        var popup_1e413150880153edea841c7f592e7d58 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_eed167341d27f5319a517554ad28ce26 = $(`<div id="html_eed167341d27f5319a517554ad28ce26" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 13.500_123.125<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.793 kWh/m²/day<br><b>Temp Mean:</b> 27.25 °C (Range: 4.34 °C)<br><b>Humidity / Pressure:</b> 81.9% / 100.33 kPa<br><b>Wind (Mean / 99th):</b> 4.86 / 11.19 m/s<br><b>Annual Rain / Wet Days:</b> 3284.6 mm / 75.2%</div>`)[0];
+                popup_1e413150880153edea841c7f592e7d58.setContent(html_eed167341d27f5319a517554ad28ce26);
+            
+        
+
+        marker_13d12b12c7c2153180f953ede01c9fd6.bindPopup(popup_1e413150880153edea841c7f592e7d58)
+        ;
+
+        
+    
+    
+            marker_13d12b12c7c2153180f953ede01c9fd6.bindTooltip(
+                `<div>
+                     [SF] 13.500_123.125 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_319ce3575d6dbca510e0085682d0f4d5 = L.marker(
+                [14.0, 120.625],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_aadde4bd3f44ce7fc2626ded6fa34478 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_319ce3575d6dbca510e0085682d0f4d5.setIcon(icon_aadde4bd3f44ce7fc2626ded6fa34478);
+        
+    
+        var popup_4ef331138846de56946010c25cb0d961 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_43e2b30ab41700d95586b8115c115868 = $(`<div id="html_43e2b30ab41700d95586b8115c115868" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.000_120.625<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.090 kWh/m²/day<br><b>Temp Mean:</b> 27.43 °C (Range: 3.74 °C)<br><b>Humidity / Pressure:</b> 82.0% / 100.26 kPa<br><b>Wind (Mean / 99th):</b> 4.30 / 8.84 m/s<br><b>Annual Rain / Wet Days:</b> 2462.8 mm / 63.7%</div>`)[0];
+                popup_4ef331138846de56946010c25cb0d961.setContent(html_43e2b30ab41700d95586b8115c115868);
+            
+        
+
+        marker_319ce3575d6dbca510e0085682d0f4d5.bindPopup(popup_4ef331138846de56946010c25cb0d961)
+        ;
+
+        
+    
+    
+            marker_319ce3575d6dbca510e0085682d0f4d5.bindTooltip(
+                `<div>
+                     [SF] 14.000_120.625 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8dab2edfc9a1350f19cd1aaa74625b56 = L.marker(
+                [14.0, 123.125],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_70de13be5362b8e5ab4c3fc896bae7c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_8dab2edfc9a1350f19cd1aaa74625b56.setIcon(icon_70de13be5362b8e5ab4c3fc896bae7c2);
+        
+    
+        var popup_d40cc22f3175b1395cc78179a5501926 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_0d5b064dfee24544d49ba59907113fbf = $(`<div id="html_0d5b064dfee24544d49ba59907113fbf" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.000_123.125<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.180 kWh/m²/day<br><b>Temp Mean:</b> 27.58 °C (Range: 2.64 °C)<br><b>Humidity / Pressure:</b> 81.1% / 100.48 kPa<br><b>Wind (Mean / 99th):</b> 5.70 / 12.29 m/s<br><b>Annual Rain / Wet Days:</b> 3557.9 mm / 77.4%</div>`)[0];
+                popup_d40cc22f3175b1395cc78179a5501926.setContent(html_0d5b064dfee24544d49ba59907113fbf);
+            
+        
+
+        marker_8dab2edfc9a1350f19cd1aaa74625b56.bindPopup(popup_d40cc22f3175b1395cc78179a5501926)
+        ;
+
+        
+    
+    
+            marker_8dab2edfc9a1350f19cd1aaa74625b56.bindTooltip(
+                `<div>
+                     [SF] 14.000_123.125 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffc5051035c7e3f86ad2a8e7ed1e66a1 = L.marker(
+                [14.5, 120.0],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_6cc51fa00b56fc0e337db496299690aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_ffc5051035c7e3f86ad2a8e7ed1e66a1.setIcon(icon_6cc51fa00b56fc0e337db496299690aa);
+        
+    
+        var popup_098487c3801dfa6ae4a7738d74e3a72c = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_0fcfa4b3dec5058c6bab4bbf0432bc9e = $(`<div id="html_0fcfa4b3dec5058c6bab4bbf0432bc9e" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.500_120.000<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.090 kWh/m²/day<br><b>Temp Mean:</b> 28.34 °C (Range: 1.53 °C)<br><b>Humidity / Pressure:</b> 79.2% / 100.95 kPa<br><b>Wind (Mean / 99th):</b> 5.17 / 11.35 m/s<br><b>Annual Rain / Wet Days:</b> 2682.6 mm / 58.7%</div>`)[0];
+                popup_098487c3801dfa6ae4a7738d74e3a72c.setContent(html_0fcfa4b3dec5058c6bab4bbf0432bc9e);
+            
+        
+
+        marker_ffc5051035c7e3f86ad2a8e7ed1e66a1.bindPopup(popup_098487c3801dfa6ae4a7738d74e3a72c)
+        ;
+
+        
+    
+    
+            marker_ffc5051035c7e3f86ad2a8e7ed1e66a1.bindTooltip(
+                `<div>
+                     [SF] 14.500_120.000 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b113f1acbc1ba26b315a5d4850c91e68 = L.marker(
+                [14.5, 120.625],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_ec625603f535fa012e147ad64f133e78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_b113f1acbc1ba26b315a5d4850c91e68.setIcon(icon_ec625603f535fa012e147ad64f133e78);
+        
+    
+        var popup_b2d255804a69f36e63370b85b79d046b = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_76aa4a29d0cd888fb6bf1acd2f9c34cb = $(`<div id="html_76aa4a29d0cd888fb6bf1acd2f9c34cb" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.500_120.625<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.090 kWh/m²/day<br><b>Temp Mean:</b> 27.48 °C (Range: 4.34 °C)<br><b>Humidity / Pressure:</b> 80.2% / 99.98 kPa<br><b>Wind (Mean / 99th):</b> 4.44 / 9.72 m/s<br><b>Annual Rain / Wet Days:</b> 2752.5 mm / 63.3%</div>`)[0];
+                popup_b2d255804a69f36e63370b85b79d046b.setContent(html_76aa4a29d0cd888fb6bf1acd2f9c34cb);
+            
+        
+
+        marker_b113f1acbc1ba26b315a5d4850c91e68.bindPopup(popup_b2d255804a69f36e63370b85b79d046b)
+        ;
+
+        
+    
+    
+            marker_b113f1acbc1ba26b315a5d4850c91e68.bindTooltip(
+                `<div>
+                     [SF] 14.500_120.625 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a85d532a387b69cdbf0b97e9cab7b094 = L.marker(
+                [15.0, 120.0],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_4792f2010e22e9c734c132a13199c7b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_a85d532a387b69cdbf0b97e9cab7b094.setIcon(icon_4792f2010e22e9c734c132a13199c7b8);
+        
+    
+        var popup_5e73cafd3e13524c7491941e0c7b4e82 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_e915a961c6ab39d1514ba20482b2c69d = $(`<div id="html_e915a961c6ab39d1514ba20482b2c69d" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 15.000_120.000<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.079 kWh/m²/day<br><b>Temp Mean:</b> 27.66 °C (Range: 4.29 °C)<br><b>Humidity / Pressure:</b> 78.7% / 99.97 kPa<br><b>Wind (Mean / 99th):</b> 4.04 / 9.21 m/s<br><b>Annual Rain / Wet Days:</b> 2897.1 mm / 56.6%</div>`)[0];
+                popup_5e73cafd3e13524c7491941e0c7b4e82.setContent(html_e915a961c6ab39d1514ba20482b2c69d);
+            
+        
+
+        marker_a85d532a387b69cdbf0b97e9cab7b094.bindPopup(popup_5e73cafd3e13524c7491941e0c7b4e82)
+        ;
+
+        
+    
+    
+            marker_a85d532a387b69cdbf0b97e9cab7b094.bindTooltip(
+                `<div>
+                     [SF] 15.000_120.000 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1cb858405789af9e2ed14cc5b82a164 = L.marker(
+                [16.0, 120.0],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_60351612e6761f7634890012f27ba86a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_e1cb858405789af9e2ed14cc5b82a164.setIcon(icon_60351612e6761f7634890012f27ba86a);
+        
+    
+        var popup_c5f1504b98c2943db50f768578a2bb7f = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_f96aef021f93d5c74b30986a5ece66aa = $(`<div id="html_f96aef021f93d5c74b30986a5ece66aa" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 16.000_120.000<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.110 kWh/m²/day<br><b>Temp Mean:</b> 27.03 °C (Range: 5.57 °C)<br><b>Humidity / Pressure:</b> 79.8% / 99.38 kPa<br><b>Wind (Mean / 99th):</b> 3.01 / 8.38 m/s<br><b>Annual Rain / Wet Days:</b> 3022.6 mm / 54.2%</div>`)[0];
+                popup_c5f1504b98c2943db50f768578a2bb7f.setContent(html_f96aef021f93d5c74b30986a5ece66aa);
+            
+        
+
+        marker_e1cb858405789af9e2ed14cc5b82a164.bindPopup(popup_c5f1504b98c2943db50f768578a2bb7f)
+        ;
+
+        
+    
+    
+            marker_e1cb858405789af9e2ed14cc5b82a164.bindTooltip(
+                `<div>
+                     [SF] 16.000_120.000 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1facc04c07f0654e8c032ae243a74379 = L.marker(
+                [18.0, 120.625],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_d953f99c2ee07310a38e5ddde5dc9762 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_1facc04c07f0654e8c032ae243a74379.setIcon(icon_d953f99c2ee07310a38e5ddde5dc9762);
+        
+    
+        var popup_b443ad92efed11160fa5a50cb33a5c6c = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_6f23075b790e467ff653ed0ec2f20ae3 = $(`<div id="html_6f23075b790e467ff653ed0ec2f20ae3" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 18.000_120.625<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.140 kWh/m²/day<br><b>Temp Mean:</b> 26.38 °C (Range: 5.83 °C)<br><b>Humidity / Pressure:</b> 78.2% / 98.05 kPa<br><b>Wind (Mean / 99th):</b> 4.59 / 10.78 m/s<br><b>Annual Rain / Wet Days:</b> 2495.8 mm / 51.2%</div>`)[0];
+                popup_b443ad92efed11160fa5a50cb33a5c6c.setContent(html_6f23075b790e467ff653ed0ec2f20ae3);
+            
+        
+
+        marker_1facc04c07f0654e8c032ae243a74379.bindPopup(popup_b443ad92efed11160fa5a50cb33a5c6c)
+        ;
+
+        
+    
+    
+            marker_1facc04c07f0654e8c032ae243a74379.bindTooltip(
+                `<div>
+                     [SF] 18.000_120.625 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb52cab65c915da033a6131af6bf7f27 = L.marker(
+                [18.5, 120.625],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_938f1ab2e0930143a7a3508f17cc1c04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_bb52cab65c915da033a6131af6bf7f27.setIcon(icon_938f1ab2e0930143a7a3508f17cc1c04);
+        
+    
+        var popup_44329f0ce519faaadfd5a503846dd6f9 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_5bd48d9bbc6aba552137a14ce00ec95c = $(`<div id="html_5bd48d9bbc6aba552137a14ce00ec95c" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 18.500_120.625<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.140 kWh/m²/day<br><b>Temp Mean:</b> 26.97 °C (Range: 3.33 °C)<br><b>Humidity / Pressure:</b> 80.1% / 99.75 kPa<br><b>Wind (Mean / 99th):</b> 5.87 / 12.48 m/s<br><b>Annual Rain / Wet Days:</b> 2572.5 mm / 57.6%</div>`)[0];
+                popup_44329f0ce519faaadfd5a503846dd6f9.setContent(html_5bd48d9bbc6aba552137a14ce00ec95c);
+            
+        
+
+        marker_bb52cab65c915da033a6131af6bf7f27.bindPopup(popup_44329f0ce519faaadfd5a503846dd6f9)
+        ;
+
+        
+    
+    
+            marker_bb52cab65c915da033a6131af6bf7f27.bindTooltip(
+                `<div>
+                     [SF] 18.500_120.625 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01324bd8708acaa1c316b8e3d54406e6 = L.marker(
+                [9.5, 123.125],
+                {}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+            var icon_5ded787cc3b96a498976807a8589601c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_01324bd8708acaa1c316b8e3d54406e6.setIcon(icon_5ded787cc3b96a498976807a8589601c);
+        
+    
+        var popup_5539a98fcbc17367f3604dbdc6f0df56 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_8c4467cf78247457ddccba52fdbbb387 = $(`<div id="html_8c4467cf78247457ddccba52fdbbb387" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 9.500_123.125<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.062 kWh/m²/day<br><b>Temp Mean:</b> 26.32 °C (Range: 4.34 °C)<br><b>Humidity / Pressure:</b> 82.1% / 98.18 kPa<br><b>Wind (Mean / 99th):</b> 4.69 / 9.77 m/s<br><b>Annual Rain / Wet Days:</b> 1852.6 mm / 63.8%</div>`)[0];
+                popup_5539a98fcbc17367f3604dbdc6f0df56.setContent(html_8c4467cf78247457ddccba52fdbbb387);
+            
+        
+
+        marker_01324bd8708acaa1c316b8e3d54406e6.bindPopup(popup_5539a98fcbc17367f3604dbdc6f0df56)
+        ;
+
+        
+    
+    
+            marker_01324bd8708acaa1c316b8e3d54406e6.bindTooltip(
+                `<div>
+                     [SF] 9.500_123.125 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0c2b9de705ef5cb07c4e8f33474f5e0 = L.circleMarker(
+                [10.193, 118.927],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_5fa3a9e8260dc914bfaf222f4cdf64eb = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_ded8e1afda4d05ffccfec18fa43f1048 = $(`<div id="html_ded8e1afda4d05ffccfec18fa43f1048" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 10.193_118.927<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.180 kWh/m²/day<br><b>Temp Mean:</b> 27.87 °C (Range: 2.38 °C)<br><b>Humidity / Pressure:</b> 79.4% / 100.18 kPa<br><b>Wind (Mean / 99th):</b> 4.57 / 9.98 m/s<br><b>Annual Rain / Wet Days:</b> 1781.1 mm / 62.4%</div>`)[0];
+                popup_5fa3a9e8260dc914bfaf222f4cdf64eb.setContent(html_ded8e1afda4d05ffccfec18fa43f1048);
+            
+        
+
+        circle_marker_e0c2b9de705ef5cb07c4e8f33474f5e0.bindPopup(popup_5fa3a9e8260dc914bfaf222f4cdf64eb)
+        ;
+
+        
+    
+    
+            circle_marker_e0c2b9de705ef5cb07c4e8f33474f5e0.bindTooltip(
+                `<div>
+                     [NSF] 10.193_118.927 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_198b912b9029d0591af287c3feebf42e = L.circleMarker(
+                [10.316, 123.885],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_7be9f62ac5465534b57c3f98fabf0795 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_78ffdced530dae975b00d3daa0c75236 = $(`<div id="html_78ffdced530dae975b00d3daa0c75236" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 10.316_123.885<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.981 kWh/m²/day<br><b>Temp Mean:</b> 27.20 °C (Range: 3.62 °C)<br><b>Humidity / Pressure:</b> 83.0% / 99.83 kPa<br><b>Wind (Mean / 99th):</b> 4.07 / 8.41 m/s<br><b>Annual Rain / Wet Days:</b> 2147.5 mm / 69.3%</div>`)[0];
+                popup_7be9f62ac5465534b57c3f98fabf0795.setContent(html_78ffdced530dae975b00d3daa0c75236);
+            
+        
+
+        circle_marker_198b912b9029d0591af287c3feebf42e.bindPopup(popup_7be9f62ac5465534b57c3f98fabf0795)
+        ;
+
+        
+    
+    
+            circle_marker_198b912b9029d0591af287c3feebf42e.bindTooltip(
+                `<div>
+                     [NSF] 10.316_123.885 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_99be5631833538daf1df9301a9ffde50 = L.circleMarker(
+                [11.183, 119.4],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_88710943e009943723bced54f3c9478e = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_3f97214c26548eaf9ba3fd701e7ffcdb = $(`<div id="html_3f97214c26548eaf9ba3fd701e7ffcdb" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 11.183_119.400<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.201 kWh/m²/day<br><b>Temp Mean:</b> 28.13 °C (Range: 1.50 °C)<br><b>Humidity / Pressure:</b> 79.9% / 100.71 kPa<br><b>Wind (Mean / 99th):</b> 5.33 / 11.07 m/s<br><b>Annual Rain / Wet Days:</b> 2127.5 mm / 67.9%</div>`)[0];
+                popup_88710943e009943723bced54f3c9478e.setContent(html_3f97214c26548eaf9ba3fd701e7ffcdb);
+            
+        
+
+        circle_marker_99be5631833538daf1df9301a9ffde50.bindPopup(popup_88710943e009943723bced54f3c9478e)
+        ;
+
+        
+    
+    
+            circle_marker_99be5631833538daf1df9301a9ffde50.bindTooltip(
+                `<div>
+                     [NSF] 11.183_119.400 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e3888b83873c6a1c28c84c9e44558bbd = L.circleMarker(
+                [11.243, 125.005],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_42d65c6204bf405e13ae6533827ebff1 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_c9238c26fbf5761faf97e08ddfdfda45 = $(`<div id="html_c9238c26fbf5761faf97e08ddfdfda45" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 11.243_125.005<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.868 kWh/m²/day<br><b>Temp Mean:</b> 26.86 °C (Range: 3.78 °C)<br><b>Humidity / Pressure:</b> 84.2% / 99.70 kPa<br><b>Wind (Mean / 99th):</b> 3.84 / 7.67 m/s<br><b>Annual Rain / Wet Days:</b> 3227.0 mm / 80.3%</div>`)[0];
+                popup_42d65c6204bf405e13ae6533827ebff1.setContent(html_c9238c26fbf5761faf97e08ddfdfda45);
+            
+        
+
+        circle_marker_e3888b83873c6a1c28c84c9e44558bbd.bindPopup(popup_42d65c6204bf405e13ae6533827ebff1)
+        ;
+
+        
+    
+    
+            circle_marker_e3888b83873c6a1c28c84c9e44558bbd.bindTooltip(
+                `<div>
+                     [NSF] 11.243_125.005 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bcdedd6fc7fce568fcf24b886846fdc1 = L.circleMarker(
+                [11.608, 125.433],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_5baa88c83e0830f585df205fd4f65e45 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_213cf21e532492bd7628a0f2189bb03b = $(`<div id="html_213cf21e532492bd7628a0f2189bb03b" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 11.608_125.433<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.868 kWh/m²/day<br><b>Temp Mean:</b> 27.91 °C (Range: 1.60 °C)<br><b>Humidity / Pressure:</b> 81.8% / 100.74 kPa<br><b>Wind (Mean / 99th):</b> 5.53 / 11.61 m/s<br><b>Annual Rain / Wet Days:</b> 3488.7 mm / 88.6%</div>`)[0];
+                popup_5baa88c83e0830f585df205fd4f65e45.setContent(html_213cf21e532492bd7628a0f2189bb03b);
+            
+        
+
+        circle_marker_bcdedd6fc7fce568fcf24b886846fdc1.bindPopup(popup_5baa88c83e0830f585df205fd4f65e45)
+        ;
+
+        
+    
+    
+            circle_marker_bcdedd6fc7fce568fcf24b886846fdc1.bindTooltip(
+                `<div>
+                     [NSF] 11.608_125.433 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0ab7e8d9e6d6702c637a8a0333fea2c5 = L.circleMarker(
+                [11.999, 120.204],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_2e52edf1fa6e5afd98147e900895e4e0 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_9784d892edd857590429f4e2ec2166ad = $(`<div id="html_9784d892edd857590429f4e2ec2166ad" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 11.999_120.204<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.367 kWh/m²/day<br><b>Temp Mean:</b> 28.12 °C (Range: 2.69 °C)<br><b>Humidity / Pressure:</b> 78.5% / 100.56 kPa<br><b>Wind (Mean / 99th):</b> 4.99 / 10.44 m/s<br><b>Annual Rain / Wet Days:</b> 2611.2 mm / 57.3%</div>`)[0];
+                popup_2e52edf1fa6e5afd98147e900895e4e0.setContent(html_9784d892edd857590429f4e2ec2166ad);
+            
+        
+
+        circle_marker_0ab7e8d9e6d6702c637a8a0333fea2c5.bindPopup(popup_2e52edf1fa6e5afd98147e900895e4e0)
+        ;
+
+        
+    
+    
+            circle_marker_0ab7e8d9e6d6702c637a8a0333fea2c5.bindTooltip(
+                `<div>
+                     [NSF] 11.999_120.204 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47b8bfd1c722237428c09f46203e3115 = L.circleMarker(
+                [12.499, 124.638],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_712318106cc2ef7de13d7bd89a01d9f8 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_caed43d4b192731ce4301e1244debf40 = $(`<div id="html_caed43d4b192731ce4301e1244debf40" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 12.499_124.638<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.894 kWh/m²/day<br><b>Temp Mean:</b> 26.94 °C (Range: 4.37 °C)<br><b>Humidity / Pressure:</b> 85.1% / 100.28 kPa<br><b>Wind (Mean / 99th):</b> 3.41 / 6.82 m/s<br><b>Annual Rain / Wet Days:</b> 3191.9 mm / 74.9%</div>`)[0];
+                popup_712318106cc2ef7de13d7bd89a01d9f8.setContent(html_caed43d4b192731ce4301e1244debf40);
+            
+        
+
+        circle_marker_47b8bfd1c722237428c09f46203e3115.bindPopup(popup_712318106cc2ef7de13d7bd89a01d9f8)
+        ;
+
+        
+    
+    
+            circle_marker_47b8bfd1c722237428c09f46203e3115.bindTooltip(
+                `<div>
+                     [NSF] 12.499_124.638 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7f906973dc573b17623fc0a7c404b318 = L.circleMarker(
+                [12.575, 122.271],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_f91eae1b37728bc4b5942bc456ff405a = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_f5ea746c63e00a0af14575d3b116bf00 = $(`<div id="html_f5ea746c63e00a0af14575d3b116bf00" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 12.575_122.271<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.169 kWh/m²/day<br><b>Temp Mean:</b> 27.74 °C (Range: 1.56 °C)<br><b>Humidity / Pressure:</b> 81.4% / 100.37 kPa<br><b>Wind (Mean / 99th):</b> 5.45 / 11.63 m/s<br><b>Annual Rain / Wet Days:</b> 2755.1 mm / 77.4%</div>`)[0];
+                popup_f91eae1b37728bc4b5942bc456ff405a.setContent(html_f5ea746c63e00a0af14575d3b116bf00);
+            
+        
+
+        circle_marker_7f906973dc573b17623fc0a7c404b318.bindPopup(popup_f91eae1b37728bc4b5942bc456ff405a)
+        ;
+
+        
+    
+    
+            circle_marker_7f906973dc573b17623fc0a7c404b318.bindTooltip(
+                `<div>
+                     [NSF] 12.575_122.271 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae90f94235ee03af718d30ec8d3ddd28 = L.circleMarker(
+                [12.767, 124.05],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_b3101750a283fe2b1d2daec348e49959 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_86248965e918a4fc2f26159297867500 = $(`<div id="html_86248965e918a4fc2f26159297867500" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 12.767_124.050<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.894 kWh/m²/day<br><b>Temp Mean:</b> 26.72 °C (Range: 4.63 °C)<br><b>Humidity / Pressure:</b> 84.8% / 99.98 kPa<br><b>Wind (Mean / 99th):</b> 3.79 / 8.15 m/s<br><b>Annual Rain / Wet Days:</b> 3304.1 mm / 80.1%</div>`)[0];
+                popup_b3101750a283fe2b1d2daec348e49959.setContent(html_86248965e918a4fc2f26159297867500);
+            
+        
+
+        circle_marker_ae90f94235ee03af718d30ec8d3ddd28.bindPopup(popup_b3101750a283fe2b1d2daec348e49959)
+        ;
+
+        
+    
+    
+            circle_marker_ae90f94235ee03af718d30ec8d3ddd28.bindTooltip(
+                `<div>
+                     [NSF] 12.767_124.050 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1e1f8fc18f48f8b10fb88137e6ccecf9 = L.circleMarker(
+                [13.255, 123.686],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_ca457d9ce350e2766ce2ac55a42c38c6 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_fb138833df4b533e90287b0b6aa219f9 = $(`<div id="html_fb138833df4b533e90287b0b6aa219f9" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 13.255_123.686<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.793 kWh/m²/day<br><b>Temp Mean:</b> 27.07 °C (Range: 2.77 °C)<br><b>Humidity / Pressure:</b> 82.7% / 99.86 kPa<br><b>Wind (Mean / 99th):</b> 5.00 / 11.24 m/s<br><b>Annual Rain / Wet Days:</b> 3644.8 mm / 81.1%</div>`)[0];
+                popup_ca457d9ce350e2766ce2ac55a42c38c6.setContent(html_fb138833df4b533e90287b0b6aa219f9);
+            
+        
+
+        circle_marker_1e1f8fc18f48f8b10fb88137e6ccecf9.bindPopup(popup_ca457d9ce350e2766ce2ac55a42c38c6)
+        ;
+
+        
+    
+    
+            circle_marker_1e1f8fc18f48f8b10fb88137e6ccecf9.bindTooltip(
+                `<div>
+                     [NSF] 13.255_123.686 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a5b81242afe3f2edf03ec0e0d152b565 = L.circleMarker(
+                [13.267, 121.0],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_2af8c92e3bf1d6247377a028d04193d3 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_d88de3cee5215e74a8b93ce59db60b26 = $(`<div id="html_d88de3cee5215e74a8b93ce59db60b26" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 13.267_121.000<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.941 kWh/m²/day<br><b>Temp Mean:</b> 27.55 °C (Range: 2.95 °C)<br><b>Humidity / Pressure:</b> 81.1% / 100.30 kPa<br><b>Wind (Mean / 99th):</b> 3.79 / 7.75 m/s<br><b>Annual Rain / Wet Days:</b> 2579.2 mm / 72.7%</div>`)[0];
+                popup_2af8c92e3bf1d6247377a028d04193d3.setContent(html_d88de3cee5215e74a8b93ce59db60b26);
+            
+        
+
+        circle_marker_a5b81242afe3f2edf03ec0e0d152b565.bindPopup(popup_2af8c92e3bf1d6247377a028d04193d3)
+        ;
+
+        
+    
+    
+            circle_marker_a5b81242afe3f2edf03ec0e0d152b565.bindTooltip(
+                `<div>
+                     [NSF] 13.267_121.000 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_18f7c5d7f0491106e281329581c0e9bb = L.circleMarker(
+                [13.45, 121.833],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_26b273b889a1ee09ee76256ff608ba9d = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_34271cafd47be7398402468f072bf762 = $(`<div id="html_34271cafd47be7398402468f072bf762" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 13.450_121.833<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.941 kWh/m²/day<br><b>Temp Mean:</b> 27.49 °C (Range: 2.88 °C)<br><b>Humidity / Pressure:</b> 82.0% / 100.33 kPa<br><b>Wind (Mean / 99th):</b> 4.66 / 10.15 m/s<br><b>Annual Rain / Wet Days:</b> 2587.1 mm / 73.2%</div>`)[0];
+                popup_26b273b889a1ee09ee76256ff608ba9d.setContent(html_34271cafd47be7398402468f072bf762);
+            
+        
+
+        circle_marker_18f7c5d7f0491106e281329581c0e9bb.bindPopup(popup_26b273b889a1ee09ee76256ff608ba9d)
+        ;
+
+        
+    
+    
+            circle_marker_18f7c5d7f0491106e281329581c0e9bb.bindTooltip(
+                `<div>
+                     [NSF] 13.450_121.833 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_096bfc7352ea765ed9ce0ea55cdabdf1 = L.circleMarker(
+                [13.583, 124.233],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_805c2c15e9063561396a69fd1e324a99 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_b33b0e9f3893ae92de098eb9d9c16234 = $(`<div id="html_b33b0e9f3893ae92de098eb9d9c16234" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 13.583_124.233<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.023 kWh/m²/day<br><b>Temp Mean:</b> 27.52 °C (Range: 1.62 °C)<br><b>Humidity / Pressure:</b> 82.4% / 100.27 kPa<br><b>Wind (Mean / 99th):</b> 5.81 / 12.43 m/s<br><b>Annual Rain / Wet Days:</b> 3814.4 mm / 87.2%</div>`)[0];
+                popup_805c2c15e9063561396a69fd1e324a99.setContent(html_b33b0e9f3893ae92de098eb9d9c16234);
+            
+        
+
+        circle_marker_096bfc7352ea765ed9ce0ea55cdabdf1.bindPopup(popup_805c2c15e9063561396a69fd1e324a99)
+        ;
+
+        
+    
+    
+            circle_marker_096bfc7352ea765ed9ce0ea55cdabdf1.bindTooltip(
+                `<div>
+                     [NSF] 13.583_124.233 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1ac8dab0805a3cb6e4d925f21a0eacbc = L.circleMarker(
+                [14.112, 122.955],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_17d01a5779c93d0b6a3ccc5361763840 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_42d2f613f752b8b66ded62747956e622 = $(`<div id="html_42d2f613f752b8b66ded62747956e622" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.112_122.955<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.836 kWh/m²/day<br><b>Temp Mean:</b> 27.58 °C (Range: 2.64 °C)<br><b>Humidity / Pressure:</b> 81.1% / 100.48 kPa<br><b>Wind (Mean / 99th):</b> 5.70 / 12.29 m/s<br><b>Annual Rain / Wet Days:</b> 3557.9 mm / 77.4%</div>`)[0];
+                popup_17d01a5779c93d0b6a3ccc5361763840.setContent(html_42d2f613f752b8b66ded62747956e622);
+            
+        
+
+        circle_marker_1ac8dab0805a3cb6e4d925f21a0eacbc.bindPopup(popup_17d01a5779c93d0b6a3ccc5361763840)
+        ;
+
+        
+    
+    
+            circle_marker_1ac8dab0805a3cb6e4d925f21a0eacbc.bindTooltip(
+                `<div>
+                     [NSF] 14.112_122.955 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b2b074b20ba64c72aaed33012c4bdbfa = L.circleMarker(
+                [14.7, 122.333],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_ef2e9a817fbf8f6c23cd337de6e030f5 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_3013107da72fe6657251a40bd0616c2d = $(`<div id="html_3013107da72fe6657251a40bd0616c2d" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.700_122.333<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.836 kWh/m²/day<br><b>Temp Mean:</b> 27.91 °C (Range: 1.12 °C)<br><b>Humidity / Pressure:</b> 81.2% / 100.94 kPa<br><b>Wind (Mean / 99th):</b> 5.95 / 12.65 m/s<br><b>Annual Rain / Wet Days:</b> 3292.7 mm / 84.6%</div>`)[0];
+                popup_ef2e9a817fbf8f6c23cd337de6e030f5.setContent(html_3013107da72fe6657251a40bd0616c2d);
+            
+        
+
+        circle_marker_b2b074b20ba64c72aaed33012c4bdbfa.bindPopup(popup_ef2e9a817fbf8f6c23cd337de6e030f5)
+        ;
+
+        
+    
+    
+            circle_marker_b2b074b20ba64c72aaed33012c4bdbfa.bindTooltip(
+                `<div>
+                     [NSF] 14.700_122.333 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6994567d7312e82278d5684f7841d033 = L.circleMarker(
+                [14.717, 121.933],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_0976021ce6b2779e8381845a5273008d = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_feb10bd55ec8e405542b0302a528c795 = $(`<div id="html_feb10bd55ec8e405542b0302a528c795" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.717_121.933<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.596 kWh/m²/day<br><b>Temp Mean:</b> 27.48 °C (Range: 2.09 °C)<br><b>Humidity / Pressure:</b> 82.7% / 100.69 kPa<br><b>Wind (Mean / 99th):</b> 4.28 / 8.92 m/s<br><b>Annual Rain / Wet Days:</b> 3361.4 mm / 79.3%</div>`)[0];
+                popup_0976021ce6b2779e8381845a5273008d.setContent(html_feb10bd55ec8e405542b0302a528c795);
+            
+        
+
+        circle_marker_6994567d7312e82278d5684f7841d033.bindPopup(popup_0976021ce6b2779e8381845a5273008d)
+        ;
+
+        
+    
+    
+            circle_marker_6994567d7312e82278d5684f7841d033.bindTooltip(
+                `<div>
+                     [NSF] 14.717_121.933 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_00a7645b9198d9a5aa4ab22f3ad53cee = L.circleMarker(
+                [17.05, 122.433],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_df8df3d787f3d59f5b75a38fc786f9f0 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_40bdc63c60dde6a901b46a2aaed87af7 = $(`<div id="html_40bdc63c60dde6a901b46a2aaed87af7" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 17.050_122.433<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.586 kWh/m²/day<br><b>Temp Mean:</b> 26.54 °C (Range: 2.51 °C)<br><b>Humidity / Pressure:</b> 82.3% / 99.31 kPa<br><b>Wind (Mean / 99th):</b> 5.04 / 11.98 m/s<br><b>Annual Rain / Wet Days:</b> 2345.0 mm / 76.2%</div>`)[0];
+                popup_df8df3d787f3d59f5b75a38fc786f9f0.setContent(html_40bdc63c60dde6a901b46a2aaed87af7);
+            
+        
+
+        circle_marker_00a7645b9198d9a5aa4ab22f3ad53cee.bindPopup(popup_df8df3d787f3d59f5b75a38fc786f9f0)
+        ;
+
+        
+    
+    
+            circle_marker_00a7645b9198d9a5aa4ab22f3ad53cee.bindTooltip(
+                `<div>
+                     [NSF] 17.050_122.433 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_35d38a6857031d08921268bb13bcce0e = L.circleMarker(
+                [19.267, 121.467],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_b43646b013bb77dd3d516e6d6fd61a12 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_cb4c98846b4bcc6f56105771edb80bba = $(`<div id="html_cb4c98846b4bcc6f56105771edb80bba" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 19.267_121.467<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.930 kWh/m²/day<br><b>Temp Mean:</b> 27.17 °C (Range: 0.83 °C)<br><b>Humidity / Pressure:</b> 81.5% / 101.05 kPa<br><b>Wind (Mean / 99th):</b> 6.98 / 14.18 m/s<br><b>Annual Rain / Wet Days:</b> 2452.3 mm / 63.1%</div>`)[0];
+                popup_b43646b013bb77dd3d516e6d6fd61a12.setContent(html_cb4c98846b4bcc6f56105771edb80bba);
+            
+        
+
+        circle_marker_35d38a6857031d08921268bb13bcce0e.bindPopup(popup_b43646b013bb77dd3d516e6d6fd61a12)
+        ;
+
+        
+    
+    
+            circle_marker_35d38a6857031d08921268bb13bcce0e.bindTooltip(
+                `<div>
+                     [NSF] 19.267_121.467 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a7a476c4731541a1b06ab13c844901b = L.circleMarker(
+                [20.448, 121.971],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_c8821f4c5107e756068aa3840f4e3c4a = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_e201650ff11a04ce3df7ca54bc7a9e50 = $(`<div id="html_e201650ff11a04ce3df7ca54bc7a9e50" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 20.448_121.971<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.852 kWh/m²/day<br><b>Temp Mean:</b> 26.82 °C (Range: 0.87 °C)<br><b>Humidity / Pressure:</b> 81.5% / 101.10 kPa<br><b>Wind (Mean / 99th):</b> 7.19 / 14.75 m/s<br><b>Annual Rain / Wet Days:</b> 1962.1 mm / 63.1%</div>`)[0];
+                popup_c8821f4c5107e756068aa3840f4e3c4a.setContent(html_e201650ff11a04ce3df7ca54bc7a9e50);
+            
+        
+
+        circle_marker_5a7a476c4731541a1b06ab13c844901b.bindPopup(popup_c8821f4c5107e756068aa3840f4e3c4a)
+        ;
+
+        
+    
+    
+            circle_marker_5a7a476c4731541a1b06ab13c844901b.bindTooltip(
+                `<div>
+                     [NSF] 20.448_121.971 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_31be6d1f25195155bb73235773582c63 = L.circleMarker(
+                [6.05, 121.0],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_940f027ea780881ce4dbe6d7966f06aa = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_51bc07edf8a405fcdb9e763ab5e5cb43 = $(`<div id="html_51bc07edf8a405fcdb9e763ab5e5cb43" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 6.050_121.000<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.257 kWh/m²/day<br><b>Temp Mean:</b> 27.78 °C (Range: 1.67 °C)<br><b>Humidity / Pressure:</b> 80.7% / 100.73 kPa<br><b>Wind (Mean / 99th):</b> 3.27 / 7.71 m/s<br><b>Annual Rain / Wet Days:</b> 1613.4 mm / 71.0%</div>`)[0];
+                popup_940f027ea780881ce4dbe6d7966f06aa.setContent(html_51bc07edf8a405fcdb9e763ab5e5cb43);
+            
+        
+
+        circle_marker_31be6d1f25195155bb73235773582c63.bindPopup(popup_940f027ea780881ce4dbe6d7966f06aa)
+        ;
+
+        
+    
+    
+            circle_marker_31be6d1f25195155bb73235773582c63.bindTooltip(
+                `<div>
+                     [NSF] 6.050_121.000 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_64c3063853854d9d65966367be9e0897 = L.circleMarker(
+                [6.921, 122.079],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_823496be2c0f41f7bd86b969f621cc2d = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_cd02b6e15d275b4b0c3aecb9d0b9e04c = $(`<div id="html_cd02b6e15d275b4b0c3aecb9d0b9e04c" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 6.921_122.079<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.221 kWh/m²/day<br><b>Temp Mean:</b> 27.63 °C (Range: 1.76 °C)<br><b>Humidity / Pressure:</b> 80.8% / 100.26 kPa<br><b>Wind (Mean / 99th):</b> 3.39 / 7.87 m/s<br><b>Annual Rain / Wet Days:</b> 1749.2 mm / 75.7%</div>`)[0];
+                popup_823496be2c0f41f7bd86b969f621cc2d.setContent(html_cd02b6e15d275b4b0c3aecb9d0b9e04c);
+            
+        
+
+        circle_marker_64c3063853854d9d65966367be9e0897.bindPopup(popup_823496be2c0f41f7bd86b969f621cc2d)
+        ;
+
+        
+    
+    
+            circle_marker_64c3063853854d9d65966367be9e0897.bindTooltip(
+                `<div>
+                     [NSF] 6.921_122.079 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cb9cbccc3ad57baf29de12bc7dcb3c8c = L.circleMarker(
+                [8.817, 117.667],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_ddb612f201fdfd0aa6feb8573713eb28 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_f60177d0794c87019b60793038b6643a = $(`<div id="html_f60177d0794c87019b60793038b6643a" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 8.817_117.667<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.931 kWh/m²/day<br><b>Temp Mean:</b> 28.01 °C (Range: 1.82 °C)<br><b>Humidity / Pressure:</b> 79.0% / 100.17 kPa<br><b>Wind (Mean / 99th):</b> 4.43 / 9.67 m/s<br><b>Annual Rain / Wet Days:</b> 1742.5 mm / 72.2%</div>`)[0];
+                popup_ddb612f201fdfd0aa6feb8573713eb28.setContent(html_f60177d0794c87019b60793038b6643a);
+            
+        
+
+        circle_marker_cb9cbccc3ad57baf29de12bc7dcb3c8c.bindPopup(popup_ddb612f201fdfd0aa6feb8573713eb28)
+        ;
+
+        
+    
+    
+            circle_marker_cb9cbccc3ad57baf29de12bc7dcb3c8c.bindTooltip(
+                `<div>
+                     [NSF] 8.817_117.667 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce7ee52fc7bda2f266f8e63b84da4c44 = L.circleMarker(
+                [9.173, 124.729],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_0d7bd46810e37f8e35cd3c35a517380c = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_a7d4db9de6aa0b2be31fa6597910a4b2 = $(`<div id="html_a7d4db9de6aa0b2be31fa6597910a4b2" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 9.173_124.729<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.208 kWh/m²/day<br><b>Temp Mean:</b> 26.44 °C (Range: 3.29 °C)<br><b>Humidity / Pressure:</b> 83.4% / 98.61 kPa<br><b>Wind (Mean / 99th):</b> 3.45 / 7.06 m/s<br><b>Annual Rain / Wet Days:</b> 2577.2 mm / 80.2%</div>`)[0];
+                popup_0d7bd46810e37f8e35cd3c35a517380c.setContent(html_a7d4db9de6aa0b2be31fa6597910a4b2);
+            
+        
+
+        circle_marker_ce7ee52fc7bda2f266f8e63b84da4c44.bindPopup(popup_0d7bd46810e37f8e35cd3c35a517380c)
+        ;
+
+        
+    
+    
+            circle_marker_ce7ee52fc7bda2f266f8e63b84da4c44.bindTooltip(
+                `<div>
+                     [NSF] 9.173_124.729 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4473653459aebf058dc1555425410431 = L.circleMarker(
+                [9.214, 123.515],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_69207f3262c4ea3bcaa7e5d3416de176 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_f84f4cd65ef81a4ca512fffc184ebd16 = $(`<div id="html_f84f4cd65ef81a4ca512fffc184ebd16" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 9.214_123.515<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.062 kWh/m²/day<br><b>Temp Mean:</b> 27.99 °C (Range: 1.16 °C)<br><b>Humidity / Pressure:</b> 81.1% / 100.83 kPa<br><b>Wind (Mean / 99th):</b> 5.06 / 10.13 m/s<br><b>Annual Rain / Wet Days:</b> 2123.6 mm / 72.6%</div>`)[0];
+                popup_69207f3262c4ea3bcaa7e5d3416de176.setContent(html_f84f4cd65ef81a4ca512fffc184ebd16);
+            
+        
+
+        circle_marker_4473653459aebf058dc1555425410431.bindPopup(popup_69207f3262c4ea3bcaa7e5d3416de176)
+        ;
+
+        
+    
+    
+            circle_marker_4473653459aebf058dc1555425410431.bindTooltip(
+                `<div>
+                     [NSF] 9.214_123.515 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_411c354cade4dca635adf42d774be384 = L.circleMarker(
+                [9.783, 126.15],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b9b2080876d09cdfe3443d8300c9c69a);
+        
+    
+        var popup_2275de3509b0f655fb875480361e704e = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_70f8c0b18d935cc17c1dfec637c2449c = $(`<div id="html_70f8c0b18d935cc17c1dfec637c2449c" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 9.783_126.150<br><b>Assigned Cluster:</b> Cluster 0<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.960 kWh/m²/day<br><b>Temp Mean:</b> 28.03 °C (Range: 1.07 °C)<br><b>Humidity / Pressure:</b> 81.6% / 100.90 kPa<br><b>Wind (Mean / 99th):</b> 4.73 / 9.75 m/s<br><b>Annual Rain / Wet Days:</b> 3801.9 mm / 90.9%</div>`)[0];
+                popup_2275de3509b0f655fb875480361e704e.setContent(html_70f8c0b18d935cc17c1dfec637c2449c);
+            
+        
+
+        circle_marker_411c354cade4dca635adf42d774be384.bindPopup(popup_2275de3509b0f655fb875480361e704e)
+        ;
+
+        
+    
+    
+            circle_marker_411c354cade4dca635adf42d774be384.bindTooltip(
+                `<div>
+                     [NSF] 9.783_126.150 -> Cluster 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_b9b2080876d09cdfe3443d8300c9c69a.addTo(map_34fc286a195e6881a1cc7f0466dd6559);
+        
+    
+            var feature_group_9b50c6044c837c61e6147fa97f83478b = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_14520e43ba161a8b90e75860730fa1f9 = L.marker(
+                [10.5, 123.125],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_3d99a58f300e537c97f1f3b7bde790d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_14520e43ba161a8b90e75860730fa1f9.setIcon(icon_3d99a58f300e537c97f1f3b7bde790d1);
+        
+    
+        var popup_24b6063077ff7289db37ae43dcc861a7 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_6d2c8490c800e4f1e03790b9646d92c3 = $(`<div id="html_6d2c8490c800e4f1e03790b9646d92c3" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 10.500_123.125<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.981 kWh/m²/day<br><b>Temp Mean:</b> 25.28 °C (Range: 5.71 °C)<br><b>Humidity / Pressure:</b> 87.1% / 97.60 kPa<br><b>Wind (Mean / 99th):</b> 3.48 / 7.50 m/s<br><b>Annual Rain / Wet Days:</b> 2436.0 mm / 68.8%</div>`)[0];
+                popup_24b6063077ff7289db37ae43dcc861a7.setContent(html_6d2c8490c800e4f1e03790b9646d92c3);
+            
+        
+
+        marker_14520e43ba161a8b90e75860730fa1f9.bindPopup(popup_24b6063077ff7289db37ae43dcc861a7)
+        ;
+
+        
+    
+    
+            marker_14520e43ba161a8b90e75860730fa1f9.bindTooltip(
+                `<div>
+                     [SF] 10.500_123.125 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06647dcef2e2ba8f6dc0adf5e635594c = L.marker(
+                [11.5, 122.5],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_62e6d0210b172e692d65d7c0d7d5d5a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_06647dcef2e2ba8f6dc0adf5e635594c.setIcon(icon_62e6d0210b172e692d65d7c0d7d5d5a4);
+        
+    
+        var popup_1788ae6eb65aa5fe1c4ccda0d40d1837 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_99493d9c0c3b6532a9641f5e744357ba = $(`<div id="html_99493d9c0c3b6532a9641f5e744357ba" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 11.500_122.500<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.826 kWh/m²/day<br><b>Temp Mean:</b> 26.68 °C (Range: 4.51 °C)<br><b>Humidity / Pressure:</b> 84.6% / 99.64 kPa<br><b>Wind (Mean / 99th):</b> 3.58 / 7.39 m/s<br><b>Annual Rain / Wet Days:</b> 2734.0 mm / 71.3%</div>`)[0];
+                popup_1788ae6eb65aa5fe1c4ccda0d40d1837.setContent(html_99493d9c0c3b6532a9641f5e744357ba);
+            
+        
+
+        marker_06647dcef2e2ba8f6dc0adf5e635594c.bindPopup(popup_1788ae6eb65aa5fe1c4ccda0d40d1837)
+        ;
+
+        
+    
+    
+            marker_06647dcef2e2ba8f6dc0adf5e635594c.bindTooltip(
+                `<div>
+                     [SF] 11.500_122.500 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_744d755d30ff79b2af4e6f8517272668 = L.marker(
+                [12.0, 125.0],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_90e0cc1b38ccd3f1b610a9b60e215133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_744d755d30ff79b2af4e6f8517272668.setIcon(icon_90e0cc1b38ccd3f1b610a9b60e215133);
+        
+    
+        var popup_264fda05c9889bac716ab30927ea0dfc = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_7465260179831c9cf274abaf71354858 = $(`<div id="html_7465260179831c9cf274abaf71354858" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 12.000_125.000<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.946 kWh/m²/day<br><b>Temp Mean:</b> 26.16 °C (Range: 5.35 °C)<br><b>Humidity / Pressure:</b> 86.3% / 99.39 kPa<br><b>Wind (Mean / 99th):</b> 3.67 / 7.68 m/s<br><b>Annual Rain / Wet Days:</b> 3476.1 mm / 80.5%</div>`)[0];
+                popup_264fda05c9889bac716ab30927ea0dfc.setContent(html_7465260179831c9cf274abaf71354858);
+            
+        
+
+        marker_744d755d30ff79b2af4e6f8517272668.bindPopup(popup_264fda05c9889bac716ab30927ea0dfc)
+        ;
+
+        
+    
+    
+            marker_744d755d30ff79b2af4e6f8517272668.bindTooltip(
+                `<div>
+                     [SF] 12.000_125.000 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ce1e4de441b54cb5638733c2ef11a76 = L.marker(
+                [14.0, 121.25],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_e47e0f123df35794c73f455193cb10f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_0ce1e4de441b54cb5638733c2ef11a76.setIcon(icon_e47e0f123df35794c73f455193cb10f6);
+        
+    
+        var popup_e900c6f91612eb2e9ca33e12e8439bd9 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_a4a3623ba20e7dc09c71a05041e241b5 = $(`<div id="html_a4a3623ba20e7dc09c71a05041e241b5" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.000_121.250<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.596 kWh/m²/day<br><b>Temp Mean:</b> 26.09 °C (Range: 6.14 °C)<br><b>Humidity / Pressure:</b> 85.7% / 99.17 kPa<br><b>Wind (Mean / 99th):</b> 2.65 / 5.36 m/s<br><b>Annual Rain / Wet Days:</b> 2915.7 mm / 75.2%</div>`)[0];
+                popup_e900c6f91612eb2e9ca33e12e8439bd9.setContent(html_a4a3623ba20e7dc09c71a05041e241b5);
+            
+        
+
+        marker_0ce1e4de441b54cb5638733c2ef11a76.bindPopup(popup_e900c6f91612eb2e9ca33e12e8439bd9)
+        ;
+
+        
+    
+    
+            marker_0ce1e4de441b54cb5638733c2ef11a76.bindTooltip(
+                `<div>
+                     [SF] 14.000_121.250 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f9dc1b404e45109e814248c8aebcd4b = L.marker(
+                [14.5, 121.25],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_2281ecc96dfcf95cb44e048eb001f074 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_0f9dc1b404e45109e814248c8aebcd4b.setIcon(icon_2281ecc96dfcf95cb44e048eb001f074);
+        
+    
+        var popup_7b37cffcd19c30dd5f6b5e1adbc83bc0 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_9684680a87ffb2745311be393531e9a8 = $(`<div id="html_9684680a87ffb2745311be393531e9a8" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.500_121.250<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.596 kWh/m²/day<br><b>Temp Mean:</b> 25.91 °C (Range: 6.09 °C)<br><b>Humidity / Pressure:</b> 85.0% / 98.73 kPa<br><b>Wind (Mean / 99th):</b> 2.80 / 5.70 m/s<br><b>Annual Rain / Wet Days:</b> 3100.0 mm / 78.3%</div>`)[0];
+                popup_7b37cffcd19c30dd5f6b5e1adbc83bc0.setContent(html_9684680a87ffb2745311be393531e9a8);
+            
+        
+
+        marker_0f9dc1b404e45109e814248c8aebcd4b.bindPopup(popup_7b37cffcd19c30dd5f6b5e1adbc83bc0)
+        ;
+
+        
+    
+    
+            marker_0f9dc1b404e45109e814248c8aebcd4b.bindTooltip(
+                `<div>
+                     [SF] 14.500_121.250 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdbb368d7334699d11d6174ec2842a43 = L.marker(
+                [15.0, 120.625],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_f1d8bd8ab0da35b7a0c651ef2fbfb546 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_cdbb368d7334699d11d6174ec2842a43.setIcon(icon_f1d8bd8ab0da35b7a0c651ef2fbfb546);
+        
+    
+        var popup_94e632de2e06dd93beacbee2a0dcd31d = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_9b591f2a46cf22ed58de2f90b0aada3b = $(`<div id="html_9b591f2a46cf22ed58de2f90b0aada3b" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 15.000_120.625<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.079 kWh/m²/day<br><b>Temp Mean:</b> 26.63 °C (Range: 7.45 °C)<br><b>Humidity / Pressure:</b> 81.6% / 99.39 kPa<br><b>Wind (Mean / 99th):</b> 3.32 / 7.62 m/s<br><b>Annual Rain / Wet Days:</b> 2850.4 mm / 60.7%</div>`)[0];
+                popup_94e632de2e06dd93beacbee2a0dcd31d.setContent(html_9b591f2a46cf22ed58de2f90b0aada3b);
+            
+        
+
+        marker_cdbb368d7334699d11d6174ec2842a43.bindPopup(popup_94e632de2e06dd93beacbee2a0dcd31d)
+        ;
+
+        
+    
+    
+            marker_cdbb368d7334699d11d6174ec2842a43.bindTooltip(
+                `<div>
+                     [SF] 15.000_120.625 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd4e8fb974a428714c8d1f605380f803 = L.marker(
+                [15.0, 121.25],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_844669ad9e573912a8e66a3652850b66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_bd4e8fb974a428714c8d1f605380f803.setIcon(icon_844669ad9e573912a8e66a3652850b66);
+        
+    
+        var popup_a50655f4bd2d6a6044af282e8e60ac82 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_e8bb8cbe2eebe1ec9f8db2db20b757df = $(`<div id="html_e8bb8cbe2eebe1ec9f8db2db20b757df" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 15.000_121.250<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.765 kWh/m²/day<br><b>Temp Mean:</b> 25.44 °C (Range: 6.40 °C)<br><b>Humidity / Pressure:</b> 85.9% / 98.09 kPa<br><b>Wind (Mean / 99th):</b> 2.75 / 5.73 m/s<br><b>Annual Rain / Wet Days:</b> 2982.2 mm / 75.6%</div>`)[0];
+                popup_a50655f4bd2d6a6044af282e8e60ac82.setContent(html_e8bb8cbe2eebe1ec9f8db2db20b757df);
+            
+        
+
+        marker_bd4e8fb974a428714c8d1f605380f803.bindPopup(popup_a50655f4bd2d6a6044af282e8e60ac82)
+        ;
+
+        
+    
+    
+            marker_bd4e8fb974a428714c8d1f605380f803.bindTooltip(
+                `<div>
+                     [SF] 15.000_121.250 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f4bcd3fd62cacd7a5f66c2cf8e7960b = L.marker(
+                [15.5, 120.0],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_9031050166a175395a7edbd7b569ec8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_2f4bcd3fd62cacd7a5f66c2cf8e7960b.setIcon(icon_9031050166a175395a7edbd7b569ec8c);
+        
+    
+        var popup_4b5ab03699e4ccefe370fcfa6c347bca = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_f7113ad9e354bef09c7269161eabca3d = $(`<div id="html_f7113ad9e354bef09c7269161eabca3d" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 15.500_120.000<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.079 kWh/m²/day<br><b>Temp Mean:</b> 25.97 °C (Range: 6.28 °C)<br><b>Humidity / Pressure:</b> 81.3% / 97.64 kPa<br><b>Wind (Mean / 99th):</b> 3.12 / 7.95 m/s<br><b>Annual Rain / Wet Days:</b> 2702.8 mm / 54.3%</div>`)[0];
+                popup_4b5ab03699e4ccefe370fcfa6c347bca.setContent(html_f7113ad9e354bef09c7269161eabca3d);
+            
+        
+
+        marker_2f4bcd3fd62cacd7a5f66c2cf8e7960b.bindPopup(popup_4b5ab03699e4ccefe370fcfa6c347bca)
+        ;
+
+        
+    
+    
+            marker_2f4bcd3fd62cacd7a5f66c2cf8e7960b.bindTooltip(
+                `<div>
+                     [SF] 15.500_120.000 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_321f7d0d3acb077789cb192a5c85a120 = L.marker(
+                [15.5, 120.625],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_9030896c49c73f328324f9b1a79d78d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_321f7d0d3acb077789cb192a5c85a120.setIcon(icon_9030896c49c73f328324f9b1a79d78d6);
+        
+    
+        var popup_715955c16f15a91ced047e3e34f11099 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_aca8f68ed91af64e803ebc6e43d723e6 = $(`<div id="html_aca8f68ed91af64e803ebc6e43d723e6" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 15.500_120.625<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.079 kWh/m²/day<br><b>Temp Mean:</b> 26.81 °C (Range: 8.32 °C)<br><b>Humidity / Pressure:</b> 80.8% / 99.77 kPa<br><b>Wind (Mean / 99th):</b> 2.55 / 6.06 m/s<br><b>Annual Rain / Wet Days:</b> 2867.6 mm / 56.9%</div>`)[0];
+                popup_715955c16f15a91ced047e3e34f11099.setContent(html_aca8f68ed91af64e803ebc6e43d723e6);
+            
+        
+
+        marker_321f7d0d3acb077789cb192a5c85a120.bindPopup(popup_715955c16f15a91ced047e3e34f11099)
+        ;
+
+        
+    
+    
+            marker_321f7d0d3acb077789cb192a5c85a120.bindTooltip(
+                `<div>
+                     [SF] 15.500_120.625 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e935ac8485d4d76de60de11c5dcda8b2 = L.marker(
+                [15.5, 121.25],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_8211e2133bb6a38bfbac4c4b233773d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_e935ac8485d4d76de60de11c5dcda8b2.setIcon(icon_8211e2133bb6a38bfbac4c4b233773d4);
+        
+    
+        var popup_a4c146e9bcf71921c020d0e68793d10c = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_f81282db6a5d34091001a25382483358 = $(`<div id="html_f81282db6a5d34091001a25382483358" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 15.500_121.250<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.765 kWh/m²/day<br><b>Temp Mean:</b> 25.38 °C (Range: 6.43 °C)<br><b>Humidity / Pressure:</b> 85.1% / 97.86 kPa<br><b>Wind (Mean / 99th):</b> 2.72 / 5.89 m/s<br><b>Annual Rain / Wet Days:</b> 2773.0 mm / 72.6%</div>`)[0];
+                popup_a4c146e9bcf71921c020d0e68793d10c.setContent(html_f81282db6a5d34091001a25382483358);
+            
+        
+
+        marker_e935ac8485d4d76de60de11c5dcda8b2.bindPopup(popup_a4c146e9bcf71921c020d0e68793d10c)
+        ;
+
+        
+    
+    
+            marker_e935ac8485d4d76de60de11c5dcda8b2.bindTooltip(
+                `<div>
+                     [SF] 15.500_121.250 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21959c1adf8af51450d1672017987244 = L.marker(
+                [16.0, 120.625],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_7f0ab532e5cd78835f72f5ee821c0245 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_21959c1adf8af51450d1672017987244.setIcon(icon_7f0ab532e5cd78835f72f5ee821c0245);
+        
+    
+        var popup_679a009c6ab9c8995a69d3c5171214fb = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_3541ada01d193218285ad63844a61a5a = $(`<div id="html_3541ada01d193218285ad63844a61a5a" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 16.000_120.625<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.110 kWh/m²/day<br><b>Temp Mean:</b> 26.24 °C (Range: 7.85 °C)<br><b>Humidity / Pressure:</b> 80.7% / 98.33 kPa<br><b>Wind (Mean / 99th):</b> 2.20 / 6.04 m/s<br><b>Annual Rain / Wet Days:</b> 2884.8 mm / 58.5%</div>`)[0];
+                popup_679a009c6ab9c8995a69d3c5171214fb.setContent(html_3541ada01d193218285ad63844a61a5a);
+            
+        
+
+        marker_21959c1adf8af51450d1672017987244.bindPopup(popup_679a009c6ab9c8995a69d3c5171214fb)
+        ;
+
+        
+    
+    
+            marker_21959c1adf8af51450d1672017987244.bindTooltip(
+                `<div>
+                     [SF] 16.000_120.625 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ac8afbfe9ca47dff0e53f13c74b8e78 = L.marker(
+                [16.5, 121.25],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_f83026cdf7cf6ab0d326325d0af0d140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_0ac8afbfe9ca47dff0e53f13c74b8e78.setIcon(icon_f83026cdf7cf6ab0d326325d0af0d140);
+        
+    
+        var popup_c523fbf0c7fe26b8145b599792041524 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_1de55f2279a1dc5def57556afe298abf = $(`<div id="html_1de55f2279a1dc5def57556afe298abf" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 16.500_121.250<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.775 kWh/m²/day<br><b>Temp Mean:</b> 22.48 °C (Range: 7.91 °C)<br><b>Humidity / Pressure:</b> 87.0% / 92.72 kPa<br><b>Wind (Mean / 99th):</b> 2.08 / 5.87 m/s<br><b>Annual Rain / Wet Days:</b> 3141.3 mm / 67.7%</div>`)[0];
+                popup_c523fbf0c7fe26b8145b599792041524.setContent(html_1de55f2279a1dc5def57556afe298abf);
+            
+        
+
+        marker_0ac8afbfe9ca47dff0e53f13c74b8e78.bindPopup(popup_c523fbf0c7fe26b8145b599792041524)
+        ;
+
+        
+    
+    
+            marker_0ac8afbfe9ca47dff0e53f13c74b8e78.bindTooltip(
+                `<div>
+                     [SF] 16.500_121.250 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7bdf9c942cc9568f562cc5760b97c135 = L.marker(
+                [17.0, 121.875],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_a6173f582eccc4aea4bc804b70ed040e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_7bdf9c942cc9568f562cc5760b97c135.setIcon(icon_a6173f582eccc4aea4bc804b70ed040e);
+        
+    
+        var popup_e4d6af82280bc398ca04e8bd103c6f47 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_f819d939e1bd9f07907dd6227540b7d9 = $(`<div id="html_f819d939e1bd9f07907dd6227540b7d9" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 17.000_121.875<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.798 kWh/m²/day<br><b>Temp Mean:</b> 26.02 °C (Range: 7.66 °C)<br><b>Humidity / Pressure:</b> 83.3% / 99.53 kPa<br><b>Wind (Mean / 99th):</b> 2.79 / 6.43 m/s<br><b>Annual Rain / Wet Days:</b> 2798.8 mm / 63.1%</div>`)[0];
+                popup_e4d6af82280bc398ca04e8bd103c6f47.setContent(html_f819d939e1bd9f07907dd6227540b7d9);
+            
+        
+
+        marker_7bdf9c942cc9568f562cc5760b97c135.bindPopup(popup_e4d6af82280bc398ca04e8bd103c6f47)
+        ;
+
+        
+    
+    
+            marker_7bdf9c942cc9568f562cc5760b97c135.bindTooltip(
+                `<div>
+                     [SF] 17.000_121.875 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_190d4caac6aa5da2c768b309fbe4dd50 = L.marker(
+                [17.5, 121.875],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_b957cd8892e9e0af73914ceb1d18662b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_190d4caac6aa5da2c768b309fbe4dd50.setIcon(icon_b957cd8892e9e0af73914ceb1d18662b);
+        
+    
+        var popup_7c5495c672b5e9f18f118aa340bdfd3c = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_eddc737763d9125f09d77eb44879f965 = $(`<div id="html_eddc737763d9125f09d77eb44879f965" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 17.500_121.875<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.798 kWh/m²/day<br><b>Temp Mean:</b> 25.30 °C (Range: 7.11 °C)<br><b>Humidity / Pressure:</b> 83.4% / 98.04 kPa<br><b>Wind (Mean / 99th):</b> 3.02 / 7.19 m/s<br><b>Annual Rain / Wet Days:</b> 2500.5 mm / 56.0%</div>`)[0];
+                popup_7c5495c672b5e9f18f118aa340bdfd3c.setContent(html_eddc737763d9125f09d77eb44879f965);
+            
+        
+
+        marker_190d4caac6aa5da2c768b309fbe4dd50.bindPopup(popup_7c5495c672b5e9f18f118aa340bdfd3c)
+        ;
+
+        
+    
+    
+            marker_190d4caac6aa5da2c768b309fbe4dd50.bindTooltip(
+                `<div>
+                     [SF] 17.500_121.875 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_255d693d64821cbb4ad25710c722cce3 = L.marker(
+                [18.0, 121.875],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_4d8d40fe9a60693d4500ce3b80d57f5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_255d693d64821cbb4ad25710c722cce3.setIcon(icon_4d8d40fe9a60693d4500ce3b80d57f5d);
+        
+    
+        var popup_8d096374ec828bb51aeab45aa67bd020 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_9789830ec78456b895925b3e73be6862 = $(`<div id="html_9789830ec78456b895925b3e73be6862" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 18.000_121.875<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.743 kWh/m²/day<br><b>Temp Mean:</b> 26.07 °C (Range: 6.97 °C)<br><b>Humidity / Pressure:</b> 82.3% / 99.39 kPa<br><b>Wind (Mean / 99th):</b> 2.54 / 5.65 m/s<br><b>Annual Rain / Wet Days:</b> 2356.7 mm / 52.5%</div>`)[0];
+                popup_8d096374ec828bb51aeab45aa67bd020.setContent(html_9789830ec78456b895925b3e73be6862);
+            
+        
+
+        marker_255d693d64821cbb4ad25710c722cce3.bindPopup(popup_8d096374ec828bb51aeab45aa67bd020)
+        ;
+
+        
+    
+    
+            marker_255d693d64821cbb4ad25710c722cce3.bindTooltip(
+                `<div>
+                     [SF] 18.000_121.875 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cc17d8b35ab56ad8457b242ec63c610 = L.marker(
+                [6.5, 125.0],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_5004c9b54eded32097fbae55ff2528b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_7cc17d8b35ab56ad8457b242ec63c610.setIcon(icon_5004c9b54eded32097fbae55ff2528b7);
+        
+    
+        var popup_444d49f178a84c0bb36f3dc86826fa9a = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_22b56cb908a80986366f6f8c1095a257 = $(`<div id="html_22b56cb908a80986366f6f8c1095a257" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 6.500_125.000<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.176 kWh/m²/day<br><b>Temp Mean:</b> 25.23 °C (Range: 7.12 °C)<br><b>Humidity / Pressure:</b> 84.4% / 97.15 kPa<br><b>Wind (Mean / 99th):</b> 2.17 / 4.06 m/s<br><b>Annual Rain / Wet Days:</b> 1850.7 mm / 66.9%</div>`)[0];
+                popup_444d49f178a84c0bb36f3dc86826fa9a.setContent(html_22b56cb908a80986366f6f8c1095a257);
+            
+        
+
+        marker_7cc17d8b35ab56ad8457b242ec63c610.bindPopup(popup_444d49f178a84c0bb36f3dc86826fa9a)
+        ;
+
+        
+    
+    
+            marker_7cc17d8b35ab56ad8457b242ec63c610.bindTooltip(
+                `<div>
+                     [SF] 6.500_125.000 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_296451ccf28e6ce685bbafa576075a0e = L.marker(
+                [7.0, 125.0],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_44d9aea5eb5c9940b1e0c03cad18a0db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_296451ccf28e6ce685bbafa576075a0e.setIcon(icon_44d9aea5eb5c9940b1e0c03cad18a0db);
+        
+    
+        var popup_c08439fbbe13dcf1be7e07169cdab49b = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_281b6130fe25298efe3a04e2b964a0ec = $(`<div id="html_281b6130fe25298efe3a04e2b964a0ec" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 7.000_125.000<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.938 kWh/m²/day<br><b>Temp Mean:</b> 25.15 °C (Range: 7.29 °C)<br><b>Humidity / Pressure:</b> 85.3% / 97.19 kPa<br><b>Wind (Mean / 99th):</b> 2.07 / 4.27 m/s<br><b>Annual Rain / Wet Days:</b> 2134.1 mm / 71.8%</div>`)[0];
+                popup_c08439fbbe13dcf1be7e07169cdab49b.setContent(html_281b6130fe25298efe3a04e2b964a0ec);
+            
+        
+
+        marker_296451ccf28e6ce685bbafa576075a0e.bindPopup(popup_c08439fbbe13dcf1be7e07169cdab49b)
+        ;
+
+        
+    
+    
+            marker_296451ccf28e6ce685bbafa576075a0e.bindTooltip(
+                `<div>
+                     [SF] 7.000_125.000 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba0d9deb04d1745cdbf01a651acec74e = L.marker(
+                [7.5, 125.0],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_cedc0ca6b6f4889479eb0c49979c7508 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_ba0d9deb04d1745cdbf01a651acec74e.setIcon(icon_cedc0ca6b6f4889479eb0c49979c7508);
+        
+    
+        var popup_16198fdeccc7684a7e47937c81b40717 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_2e79ad7be581b8f8ffb3f0d0f9ca8763 = $(`<div id="html_2e79ad7be581b8f8ffb3f0d0f9ca8763" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 7.500_125.000<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.938 kWh/m²/day<br><b>Temp Mean:</b> 23.89 °C (Range: 7.18 °C)<br><b>Humidity / Pressure:</b> 87.3% / 95.16 kPa<br><b>Wind (Mean / 99th):</b> 2.37 / 5.16 m/s<br><b>Annual Rain / Wet Days:</b> 2363.6 mm / 76.2%</div>`)[0];
+                popup_16198fdeccc7684a7e47937c81b40717.setContent(html_2e79ad7be581b8f8ffb3f0d0f9ca8763);
+            
+        
+
+        marker_ba0d9deb04d1745cdbf01a651acec74e.bindPopup(popup_16198fdeccc7684a7e47937c81b40717)
+        ;
+
+        
+    
+    
+            marker_ba0d9deb04d1745cdbf01a651acec74e.bindTooltip(
+                `<div>
+                     [SF] 7.500_125.000 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ee761c1d1a6585a475fbec658b7b019 = L.marker(
+                [8.5, 125.0],
+                {}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+            var icon_b84dc34d42a4b64c700fdab0b1d5f00a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_5ee761c1d1a6585a475fbec658b7b019.setIcon(icon_b84dc34d42a4b64c700fdab0b1d5f00a);
+        
+    
+        var popup_d53015408757361b849410ae30e77237 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_e2dc35f896ca8bb583a513f43ec2bd47 = $(`<div id="html_e2dc35f896ca8bb583a513f43ec2bd47" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 8.500_125.000<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Existing Solar Farm (SF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.792 kWh/m²/day<br><b>Temp Mean:</b> 23.84 °C (Range: 6.67 °C)<br><b>Humidity / Pressure:</b> 85.4% / 94.24 kPa<br><b>Wind (Mean / 99th):</b> 2.30 / 4.62 m/s<br><b>Annual Rain / Wet Days:</b> 2413.3 mm / 79.2%</div>`)[0];
+                popup_d53015408757361b849410ae30e77237.setContent(html_e2dc35f896ca8bb583a513f43ec2bd47);
+            
+        
+
+        marker_5ee761c1d1a6585a475fbec658b7b019.bindPopup(popup_d53015408757361b849410ae30e77237)
+        ;
+
+        
+    
+    
+            marker_5ee761c1d1a6585a475fbec658b7b019.bindTooltip(
+                `<div>
+                     [SF] 8.500_125.000 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef9f226cc3798df1bbdc5fc5d10875a4 = L.circleMarker(
+                [14.068, 121.493],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_0e562ecc0b4b7ce71a4836952290cdb9 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_71249360f79c9504a1e03f6da71cf5b5 = $(`<div id="html_71249360f79c9504a1e03f6da71cf5b5" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.068_121.493<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.596 kWh/m²/day<br><b>Temp Mean:</b> 26.09 °C (Range: 6.14 °C)<br><b>Humidity / Pressure:</b> 85.7% / 99.17 kPa<br><b>Wind (Mean / 99th):</b> 2.65 / 5.36 m/s<br><b>Annual Rain / Wet Days:</b> 2915.7 mm / 75.2%</div>`)[0];
+                popup_0e562ecc0b4b7ce71a4836952290cdb9.setContent(html_71249360f79c9504a1e03f6da71cf5b5);
+            
+        
+
+        circle_marker_ef9f226cc3798df1bbdc5fc5d10875a4.bindPopup(popup_0e562ecc0b4b7ce71a4836952290cdb9)
+        ;
+
+        
+    
+    
+            circle_marker_ef9f226cc3798df1bbdc5fc5d10875a4.bindTooltip(
+                `<div>
+                     [NSF] 14.068_121.493 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_055ed5867306635bac2f2fdd10ba128a = L.circleMarker(
+                [14.583, 120.967],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_eb7e59579676d2ed4802cf1898969090 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_df4d9eed20deb4fe738dc5df493cf5d9 = $(`<div id="html_df4d9eed20deb4fe738dc5df493cf5d9" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.583_120.967<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.090 kWh/m²/day<br><b>Temp Mean:</b> 25.91 °C (Range: 6.09 °C)<br><b>Humidity / Pressure:</b> 85.0% / 98.73 kPa<br><b>Wind (Mean / 99th):</b> 2.80 / 5.70 m/s<br><b>Annual Rain / Wet Days:</b> 3100.0 mm / 78.3%</div>`)[0];
+                popup_eb7e59579676d2ed4802cf1898969090.setContent(html_df4d9eed20deb4fe738dc5df493cf5d9);
+            
+        
+
+        circle_marker_055ed5867306635bac2f2fdd10ba128a.bindPopup(popup_eb7e59579676d2ed4802cf1898969090)
+        ;
+
+        
+    
+    
+            circle_marker_055ed5867306635bac2f2fdd10ba128a.bindTooltip(
+                `<div>
+                     [NSF] 14.583_120.967 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7044fec363e6a8249c6d0a9cd623cae6 = L.circleMarker(
+                [14.654, 121.069],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_4349d49cc505cd79698012fde56e3812 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_6b739554968ce0d1d1632483d536b20e = $(`<div id="html_6b739554968ce0d1d1632483d536b20e" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 14.654_121.069<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.596 kWh/m²/day<br><b>Temp Mean:</b> 25.91 °C (Range: 6.09 °C)<br><b>Humidity / Pressure:</b> 85.0% / 98.73 kPa<br><b>Wind (Mean / 99th):</b> 2.80 / 5.70 m/s<br><b>Annual Rain / Wet Days:</b> 3100.0 mm / 78.3%</div>`)[0];
+                popup_4349d49cc505cd79698012fde56e3812.setContent(html_6b739554968ce0d1d1632483d536b20e);
+            
+        
+
+        circle_marker_7044fec363e6a8249c6d0a9cd623cae6.bindPopup(popup_4349d49cc505cd79698012fde56e3812)
+        ;
+
+        
+    
+    
+            circle_marker_7044fec363e6a8249c6d0a9cd623cae6.bindTooltip(
+                `<div>
+                     [NSF] 14.654_121.069 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e639e1b9c4347c4a15339f97d1be65b = L.circleMarker(
+                [15.383, 121.383],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_5f1ff2e69990f80f5ed2b77cc8e47421 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_df232f6bd928705823d8cda24ac5fd62 = $(`<div id="html_df232f6bd928705823d8cda24ac5fd62" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 15.383_121.383<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.765 kWh/m²/day<br><b>Temp Mean:</b> 25.38 °C (Range: 6.50 °C)<br><b>Humidity / Pressure:</b> 85.1% / 97.86 kPa<br><b>Wind (Mean / 99th):</b> 2.72 / 5.85 m/s<br><b>Annual Rain / Wet Days:</b> 2773.0 mm / 75.8%</div>`)[0];
+                popup_5f1ff2e69990f80f5ed2b77cc8e47421.setContent(html_df232f6bd928705823d8cda24ac5fd62);
+            
+        
+
+        circle_marker_2e639e1b9c4347c4a15339f97d1be65b.bindPopup(popup_5f1ff2e69990f80f5ed2b77cc8e47421)
+        ;
+
+        
+    
+    
+            circle_marker_2e639e1b9c4347c4a15339f97d1be65b.bindTooltip(
+                `<div>
+                     [NSF] 15.383_121.383 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c51e557f448306f3bfd22472b48da54 = L.circleMarker(
+                [16.283, 122.117],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_348672668416748c82efe91957badaab = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_5112f86a786566a01a2f5752eceae42e = $(`<div id="html_5112f86a786566a01a2f5752eceae42e" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 16.283_122.117<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.779 kWh/m²/day<br><b>Temp Mean:</b> 25.02 °C (Range: 7.21 °C)<br><b>Humidity / Pressure:</b> 85.5% / 97.73 kPa<br><b>Wind (Mean / 99th):</b> 2.27 / 5.12 m/s<br><b>Annual Rain / Wet Days:</b> 3082.4 mm / 74.1%</div>`)[0];
+                popup_348672668416748c82efe91957badaab.setContent(html_5112f86a786566a01a2f5752eceae42e);
+            
+        
+
+        circle_marker_4c51e557f448306f3bfd22472b48da54.bindPopup(popup_348672668416748c82efe91957badaab)
+        ;
+
+        
+    
+    
+            circle_marker_4c51e557f448306f3bfd22472b48da54.bindTooltip(
+                `<div>
+                     [NSF] 16.283_122.117 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bb949077298fba00e0e41b2f69b976cb = L.circleMarker(
+                [16.402, 120.596],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_7b22c7527c1a7005bf4b36a6088f16f1 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_5c4a3099b2626e79452b37f201ab4ee2 = $(`<div id="html_5c4a3099b2626e79452b37f201ab4ee2" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 16.402_120.596<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.110 kWh/m²/day<br><b>Temp Mean:</b> 23.17 °C (Range: 7.60 °C)<br><b>Humidity / Pressure:</b> 84.7% / 93.12 kPa<br><b>Wind (Mean / 99th):</b> 2.32 / 7.32 m/s<br><b>Annual Rain / Wet Days:</b> 3195.6 mm / 60.8%</div>`)[0];
+                popup_7b22c7527c1a7005bf4b36a6088f16f1.setContent(html_5c4a3099b2626e79452b37f201ab4ee2);
+            
+        
+
+        circle_marker_bb949077298fba00e0e41b2f69b976cb.bindPopup(popup_7b22c7527c1a7005bf4b36a6088f16f1)
+        ;
+
+        
+    
+    
+            circle_marker_bb949077298fba00e0e41b2f69b976cb.bindTooltip(
+                `<div>
+                     [NSF] 16.402_120.596 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_15bda4a0ca22997dc025bac3fb1de99a = L.circleMarker(
+                [16.598, 120.899],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_194a4c8fa571933e51167e1906ef4658 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_2f162de5d24aa1686e8d73af75955bc3 = $(`<div id="html_2f162de5d24aa1686e8d73af75955bc3" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 16.598_120.899<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.110 kWh/m²/day<br><b>Temp Mean:</b> 23.17 °C (Range: 7.60 °C)<br><b>Humidity / Pressure:</b> 84.7% / 93.12 kPa<br><b>Wind (Mean / 99th):</b> 2.32 / 7.32 m/s<br><b>Annual Rain / Wet Days:</b> 3195.6 mm / 60.8%</div>`)[0];
+                popup_194a4c8fa571933e51167e1906ef4658.setContent(html_2f162de5d24aa1686e8d73af75955bc3);
+            
+        
+
+        circle_marker_15bda4a0ca22997dc025bac3fb1de99a.bindPopup(popup_194a4c8fa571933e51167e1906ef4658)
+        ;
+
+        
+    
+    
+            circle_marker_15bda4a0ca22997dc025bac3fb1de99a.bindTooltip(
+                `<div>
+                     [NSF] 16.598_120.899 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7932154ab829bc16d858477f9566bf90 = L.circleMarker(
+                [16.913, 121.056],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_5dc26ff05d866d1a2d6088582f0f358e = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_8c2ce9d2a5960e09eb237b41047023fd = $(`<div id="html_8c2ce9d2a5960e09eb237b41047023fd" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 16.913_121.056<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.775 kWh/m²/day<br><b>Temp Mean:</b> 22.94 °C (Range: 7.97 °C)<br><b>Humidity / Pressure:</b> 86.0% / 93.46 kPa<br><b>Wind (Mean / 99th):</b> 2.19 / 6.09 m/s<br><b>Annual Rain / Wet Days:</b> 2919.3 mm / 66.9%</div>`)[0];
+                popup_5dc26ff05d866d1a2d6088582f0f358e.setContent(html_8c2ce9d2a5960e09eb237b41047023fd);
+            
+        
+
+        circle_marker_7932154ab829bc16d858477f9566bf90.bindPopup(popup_5dc26ff05d866d1a2d6088582f0f358e)
+        ;
+
+        
+    
+    
+            circle_marker_7932154ab829bc16d858477f9566bf90.bindTooltip(
+                `<div>
+                     [NSF] 16.913_121.056 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e5c45f1996c96abf9a1a98436a92366d = L.circleMarker(
+                [17.083, 120.9],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_e527572a05ca1c01658e6c1f54a96940 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_0158609313b368f5d0d317194e13f0b3 = $(`<div id="html_0158609313b368f5d0d317194e13f0b3" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 17.083_120.900<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.263 kWh/m²/day<br><b>Temp Mean:</b> 24.46 °C (Range: 6.25 °C)<br><b>Humidity / Pressure:</b> 80.0% / 94.21 kPa<br><b>Wind (Mean / 99th):</b> 2.56 / 8.18 m/s<br><b>Annual Rain / Wet Days:</b> 3157.0 mm / 60.5%</div>`)[0];
+                popup_e527572a05ca1c01658e6c1f54a96940.setContent(html_0158609313b368f5d0d317194e13f0b3);
+            
+        
+
+        circle_marker_e5c45f1996c96abf9a1a98436a92366d.bindPopup(popup_e527572a05ca1c01658e6c1f54a96940)
+        ;
+
+        
+    
+    
+            circle_marker_e5c45f1996c96abf9a1a98436a92366d.bindTooltip(
+                `<div>
+                     [NSF] 17.083_120.900 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_73416f2c6200031a7e90dfa77f24dcfe = L.circleMarker(
+                [17.45, 121.45],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_11164c723148da48fcdf9b88ea083c49 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_0ac249ee84ff33931d0b70ec2dc0d065 = $(`<div id="html_0ac249ee84ff33931d0b70ec2dc0d065" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 17.450_121.450<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.798 kWh/m²/day<br><b>Temp Mean:</b> 23.55 °C (Range: 8.35 °C)<br><b>Humidity / Pressure:</b> 84.6% / 94.56 kPa<br><b>Wind (Mean / 99th):</b> 2.37 / 6.01 m/s<br><b>Annual Rain / Wet Days:</b> 2594.5 mm / 59.0%</div>`)[0];
+                popup_11164c723148da48fcdf9b88ea083c49.setContent(html_0ac249ee84ff33931d0b70ec2dc0d065);
+            
+        
+
+        circle_marker_73416f2c6200031a7e90dfa77f24dcfe.bindPopup(popup_11164c723148da48fcdf9b88ea083c49)
+        ;
+
+        
+    
+    
+            circle_marker_73416f2c6200031a7e90dfa77f24dcfe.bindTooltip(
+                `<div>
+                     [NSF] 17.450_121.450 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1c5276d72accab11f4370b787b0e0984 = L.circleMarker(
+                [18.017, 121.183],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_1d9805bf7d93ac7bd7590cd3177ccd4c = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_728ed81418168c86ebb47db05500c600 = $(`<div id="html_728ed81418168c86ebb47db05500c600" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 18.017_121.183<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.743 kWh/m²/day<br><b>Temp Mean:</b> 24.51 °C (Range: 9.00 °C)<br><b>Humidity / Pressure:</b> 83.7% / 96.56 kPa<br><b>Wind (Mean / 99th):</b> 2.22 / 5.23 m/s<br><b>Annual Rain / Wet Days:</b> 2404.1 mm / 53.2%</div>`)[0];
+                popup_1d9805bf7d93ac7bd7590cd3177ccd4c.setContent(html_728ed81418168c86ebb47db05500c600);
+            
+        
+
+        circle_marker_1c5276d72accab11f4370b787b0e0984.bindPopup(popup_1d9805bf7d93ac7bd7590cd3177ccd4c)
+        ;
+
+        
+    
+    
+            circle_marker_1c5276d72accab11f4370b787b0e0984.bindTooltip(
+                `<div>
+                     [NSF] 18.017_121.183 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_80b909aa02231fc7a6a63ed54451dd2b = L.circleMarker(
+                [6.987, 125.271],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_0632c1ebeb9efafbd7bdf9d29cd28b08 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_0951f3faa96de6efc12a97575d262fe4 = $(`<div id="html_0951f3faa96de6efc12a97575d262fe4" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 6.987_125.271<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.176 kWh/m²/day<br><b>Temp Mean:</b> 25.15 °C (Range: 7.29 °C)<br><b>Humidity / Pressure:</b> 85.3% / 97.19 kPa<br><b>Wind (Mean / 99th):</b> 2.07 / 4.27 m/s<br><b>Annual Rain / Wet Days:</b> 2134.1 mm / 71.8%</div>`)[0];
+                popup_0632c1ebeb9efafbd7bdf9d29cd28b08.setContent(html_0951f3faa96de6efc12a97575d262fe4);
+            
+        
+
+        circle_marker_80b909aa02231fc7a6a63ed54451dd2b.bindPopup(popup_0632c1ebeb9efafbd7bdf9d29cd28b08)
+        ;
+
+        
+    
+    
+            circle_marker_80b909aa02231fc7a6a63ed54451dd2b.bindTooltip(
+                `<div>
+                     [NSF] 6.987_125.271 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7077217d656acbeef89e84edc7261d4 = L.circleMarker(
+                [8.133, 124.917],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_4d015f0098948e9249a030c4b414279a = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_593d9ef823f0b0ee24ff8d747be74a26 = $(`<div id="html_593d9ef823f0b0ee24ff8d747be74a26" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 8.133_124.917<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 5.022 kWh/m²/day<br><b>Temp Mean:</b> 21.81 °C (Range: 6.98 °C)<br><b>Humidity / Pressure:</b> 88.8% / 91.25 kPa<br><b>Wind (Mean / 99th):</b> 2.25 / 5.25 m/s<br><b>Annual Rain / Wet Days:</b> 2484.1 mm / 78.7%</div>`)[0];
+                popup_4d015f0098948e9249a030c4b414279a.setContent(html_593d9ef823f0b0ee24ff8d747be74a26);
+            
+        
+
+        circle_marker_c7077217d656acbeef89e84edc7261d4.bindPopup(popup_4d015f0098948e9249a030c4b414279a)
+        ;
+
+        
+    
+    
+            circle_marker_c7077217d656acbeef89e84edc7261d4.bindTooltip(
+                `<div>
+                     [NSF] 8.133_124.917 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_74c9bb3edf76c7e2efbf3cc409cea66e = L.circleMarker(
+                [9.078, 126.199],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9b50c6044c837c61e6147fa97f83478b);
+        
+    
+        var popup_739184cbe69674ca657f949000f3ea84 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_fb75236c65e5bb1adb9b2684fe968f54 = $(`<div id="html_fb75236c65e5bb1adb9b2684fe968f54" style="width: 100.0%; height: 100.0%;"><b>Grid Cell:</b> 9.078_126.199<br><b>Assigned Cluster:</b> Cluster 1<br><b>Status:</b> Non-Solar Farm (NSF)<br><hr style='margin:4px 0;'><b>GHI Mean:</b> 4.960 kWh/m²/day<br><b>Temp Mean:</b> 26.58 °C (Range: 3.87 °C)<br><b>Humidity / Pressure:</b> 84.2% / 99.26 kPa<br><b>Wind (Mean / 99th):</b> 2.97 / 6.30 m/s<br><b>Annual Rain / Wet Days:</b> 4112.5 mm / 91.5%</div>`)[0];
+                popup_739184cbe69674ca657f949000f3ea84.setContent(html_fb75236c65e5bb1adb9b2684fe968f54);
+            
+        
+
+        circle_marker_74c9bb3edf76c7e2efbf3cc409cea66e.bindPopup(popup_739184cbe69674ca657f949000f3ea84)
+        ;
+
+        
+    
+    
+            circle_marker_74c9bb3edf76c7e2efbf3cc409cea66e.bindTooltip(
+                `<div>
+                     [NSF] 9.078_126.199 -> Cluster 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_9b50c6044c837c61e6147fa97f83478b.addTo(map_34fc286a195e6881a1cc7f0466dd6559);
+        
+    
+            var layer_control_ec4041c6595b428e66543a845aee42c7_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f4d3c6550eeae96815e2cb04df876615,
+                    "Satellite Imagery" : tile_layer_6d00799a748dddd2376a7172bd7fc8b8,
+                },
+                overlays :  {
+                    "Cluster 0" : feature_group_b9b2080876d09cdfe3443d8300c9c69a,
+                    "Cluster 1" : feature_group_9b50c6044c837c61e6147fa97f83478b,
+                },
+            };
+            let layer_control_ec4041c6595b428e66543a845aee42c7 = L.control.layers(
+                layer_control_ec4041c6595b428e66543a845aee42c7_layers.base_layers,
+                layer_control_ec4041c6595b428e66543a845aee42c7_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_34fc286a195e6881a1cc7f0466dd6559);
+
+        
+</script>
+</html>
